@@ -1,3 +1,7 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.svg">
+  <img alt="LynkqUK" src="art/header-light.svg">
+</picture>
 <!-- LYNKQUK | DARK ELITE PROFILE -->
 
 <div align="center">
