@@ -16,12 +16,12 @@
 <br/>
 
 <a href="https://github.com/LynkqUK">
-<img src="https://img.shields.io/github/followers/LynkqUK?style=flat-square&logo=github&logoColor=white&label=FOLLOWERS&color=8B2635&labelColor=111111"/>
+  <img src="https://img.shields.io/github/followers/LynkqUK?style=flat-square&logo=github&logoColor=white&label=FOLLOWERS&color=8B2635&labelColor=111111" alt="GitHub followers"/>
 </a>
 <a href="https://github.com/LynkqUK?tab=repositories">
-<img src="https://img.shields.io/github/stars/LynkqUK?style=flat-square&logo=github&logoColor=white&label=STARS&color=8B2635&labelColor=111111"/>
+  <img src="https://img.shields.io/github/stars/LynkqUK?style=flat-square&logo=github&logoColor=white&label=STARS&color=8B2635&labelColor=111111" alt="GitHub stars"/>
 </a>
-<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=flat-square&color=8B2635&label=VISITORS"/>
+<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=flat-square&color=8B2635&label=VISITORS" alt="Profile views"/>
 
 <br/><br/>
 
@@ -61,7 +61,7 @@ I enjoy exploring how technology works, experimenting with different languages a
 </td>
 <td width="35%" align="center" valign="middle">
 
-<img src="https://github.com/LynkqUK.png" width="180" alt="LynkqUK GitHub avatar" style="border-radius: 12px;"/>
+<img src="https://github.com/LynkqUK.png" width="180" alt="LynkqUK GitHub avatar"/>
 
 <br/><br/>
 
@@ -105,9 +105,9 @@ I enjoy exploring how technology works, experimenting with different languages a
 
 <br/><br/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0D0D0D&title_color=B8323E&icon_color=B8323E&text_color=C9C9C9&ring_color=8B2635&include_all_commits=true&rank_icon=github" alt="GitHub statistics"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0D0D0D&title_color=B8323E&icon_color=B8323E&text_color=C9C9C9&ring_color=8B2635&include_all_commits=true&rank_icon=github" alt="LynkqUK GitHub statistics"/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0D0D0D&title_color=B8323E&text_color=C9C9C9&langs_count=6" alt="Most used languages"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0D0D0D&title_color=B8323E&text_color=C9C9C9&langs_count=6" alt="LynkqUK most used languages"/>
 
 <br/><br/>
 
@@ -115,7 +115,7 @@ I enjoy exploring how technology works, experimenting with different languages a
 
 <br/><br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0D0D0D&color=C9C9C9&line=B8323E&point=FFFFFF&area=true&area_color=46151C&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="GitHub activity graph"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0D0D0D&color=C9C9C9&line=B8323E&point=FFFFFF&area=true&area_color=46151C&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="LynkqUK GitHub activity graph"/>
 
 </div>
 
@@ -132,64 +132,10 @@ I enjoy exploring how technology works, experimenting with different languages a
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake.svg">
-  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake"/>
+  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="LynkqUK contribution snake"/>
 </picture>
 
 </div>
-
-<!--
-==========================================================
-GITHUB CONTRIBUTION SNAKE AUTOMATION
-==========================================================
-
-Create a separate file:
-
-.github/workflows/snake.yml
-
-Paste this workflow into it:
-
-name: Generate Contribution Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: LynkqUK
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Deploy to Output Branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-IMPORTANT:
-1. Enable GitHub Actions.
-2. Run the workflow manually.
-3. Wait for the output branch to be created.
-4. The snake will update automatically every day.
-
-==========================================================
--->
 
 ---
 
@@ -202,22 +148,22 @@ IMPORTANT:
 <br/><br/>
 
 <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
-<img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=B8323E"/>
+  <img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=B8323E" alt="LinkedIn"/>
 </a>
 <a href="https://x.com/YOUR_X_USERNAME">
-<img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=FFFFFF" alt="X"/>
 </a>
 <a href="https://www.instagram.com/YOUR_INSTAGRAM">
-<img src="https://img.shields.io/badge/INSTAGRAM-111111?style=for-the-badge&logo=instagram&logoColor=B8323E"/>
+  <img src="https://img.shields.io/badge/INSTAGRAM-111111?style=for-the-badge&logo=instagram&logoColor=B8323E" alt="Instagram"/>
 </a>
 <a href="https://www.tiktok.com/@YOUR_TIKTOK">
-<img src="https://img.shields.io/badge/TIKTOK-111111?style=for-the-badge&logo=tiktok&logoColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/TIKTOK-111111?style=for-the-badge&logo=tiktok&logoColor=FFFFFF" alt="TikTok"/>
 </a>
 <a href="https://www.youtube.com/@YOUR_YOUTUBE">
-<img src="https://img.shields.io/badge/YOUTUBE-111111?style=for-the-badge&logo=youtube&logoColor=B8323E"/>
+  <img src="https://img.shields.io/badge/YOUTUBE-111111?style=for-the-badge&logo=youtube&logoColor=B8323E" alt="YouTube"/>
 </a>
 <a href="mailto:YOUR_EMAIL@example.com">
-<img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=B8323E"/>
+  <img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=B8323E" alt="Email"/>
 </a>
 
 <br/><br/>
