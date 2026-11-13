@@ -13,9 +13,13 @@
 <a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=E03A4E&label=STARS&color=1a0a0d&labelColor=0b0b0b" alt="Stars"/></a>
 <img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=1a0a0d&labelColor=0b0b0b" alt="Visitors"/>
 
+<br/><br/>
+
+<img src="art/terminal.svg" width="82%" alt="Terminal: whoami, focus, skills, git status"/>
+
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
+<img src="art/divider.svg" width="100%" alt=""/>
 
 <div align="center">
 
@@ -56,11 +60,92 @@ goal      = create meaningful things through code
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
+<img src="art/divider.svg" width="100%" alt=""/>
 
 <div align="center">
 
-### `[ 02 ]` &nbsp; ARSENAL
+### `[ 02 ]` &nbsp; RIGHT NOW
+
+</div>
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+<sub>BUILDING</sub>
+
+**Small projects that ship**
+
+<sub>finished beats perfect</sub>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+<sub>LEARNING</sub>
+
+**Python · C++ · the web stack**
+
+<sub>fundamentals first</sub>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+<sub>EXPLORING</sub>
+
+**How real software is made**
+
+<sub>reading code, breaking things</sub>
+
+</td>
+</tr>
+</table>
+
+<img src="art/divider.svg" width="100%" alt=""/>
+
+<div align="center">
+
+### `[ 03 ]` &nbsp; OPERATING PRINCIPLES
+
+</div>
+
+<table>
+<tr>
+<td width="25%" valign="top" align="center">
+
+**SYSTEMS**
+
+<sub>over motivation</sub>
+
+</td>
+<td width="25%" valign="top" align="center">
+
+**CLEAN CODE**
+
+<sub>readable first</sub>
+
+</td>
+<td width="25%" valign="top" align="center">
+
+**SMALL LOOPS**
+
+<sub>ship, learn, repeat</sub>
+
+</td>
+<td width="25%" valign="top" align="center">
+
+**IN PUBLIC**
+
+<sub>commit daily</sub>
+
+</td>
+</tr>
+</table>
+
+<img src="art/divider.svg" width="100%" alt=""/>
+
+<div align="center">
+
+### `[ 04 ]` &nbsp; ARSENAL
 
 <br/>
 
@@ -70,11 +155,11 @@ goal      = create meaningful things through code
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
+<img src="art/divider.svg" width="100%" alt=""/>
 
 <div align="center">
 
-### `[ 03 ]` &nbsp; GITHUB INTEL
+### `[ 05 ]` &nbsp; GITHUB INTEL
 
 <br/>
 
@@ -92,11 +177,11 @@ goal      = create meaningful things through code
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
+<img src="art/divider.svg" width="100%" alt=""/>
 
 <div align="center">
 
-### `[ 04 ]` &nbsp; CONTRIBUTION SNAKE
+### `[ 06 ]` &nbsp; CONTRIBUTION SNAKE
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-snake-dark.svg">
@@ -106,11 +191,44 @@ goal      = create meaningful things through code
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
+<img src="art/divider.svg" width="100%" alt=""/>
 
 <div align="center">
 
-### `[ 05 ]` &nbsp; TRANSMISSION
+### `[ 07 ]` &nbsp; ROADMAP
+
+</div>
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+```diff
++ set up the profile
++ lock in a daily coding habit
+- ship a first full project
+- push a project to production
+```
+
+</td>
+<td valign="top" width="50%">
+
+```diff
+- go deeper on C++ and data structures
+- make a first open-source contribution
+- build something other people use
+- keep the streak alive
+```
+
+</td>
+</tr>
+</table>
+
+<img src="art/divider.svg" width="100%" alt=""/>
+
+<div align="center">
+
+### `[ 08 ]` &nbsp; TRANSMISSION
 
 **Got something worth building? Let's talk.**
 
