@@ -1,170 +1,126 @@
- <div align="center">
+<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.svg">
   <img alt="LynkqUK" src="art/header-light.svg" width="100%">
 </picture>
 
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=B8323E&center=true&vCenter=true&width=650&lines=ASPIRING+SOFTWARE+DEVELOPER;BUILDING+IDEAS+INTO+REALITY;ENGINEERING+THE+NEXT+CHAPTER;THINK.+BUILD.+REFINE." alt="Typing animation"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=2600&pause=900&color=E03A4E&center=true&vCenter=true&width=620&height=30&lines=ASPIRING+SOFTWARE+DEVELOPER;BUILDING+IDEAS+INTO+REALITY;THINK.+BUILD.+REFINE.;SHIP+IT." alt="Typing animation"/>
 
 <br/>
 
-**ASPIRING DEVELOPER · BUILDER · PROBLEM SOLVER**
-
-<br/>
-
-<a href="https://github.com/LynkqUK">
-  <img src="https://img.shields.io/github/followers/LynkqUK?style=flat-square&logo=github&logoColor=white&label=FOLLOWERS&color=8B2635&labelColor=111111" alt="GitHub followers"/>
-</a>
-<a href="https://github.com/LynkqUK?tab=repositories">
-  <img src="https://img.shields.io/github/stars/LynkqUK?style=flat-square&logo=github&logoColor=white&label=STARS&color=8B2635&labelColor=111111" alt="GitHub stars"/>
-</a>
-<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=flat-square&color=8B2635&label=VISITORS" alt="Profile views"/>
-
-<br/><br/>
-
-<sub>INDEPENDENT THINKING. CONTINUOUS IMPROVEMENT.</sub>
+<a href="https://github.com/LynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/LynkqUK?style=for-the-badge&logo=github&logoColor=E03A4E&label=FOLLOWERS&color=1a0a0d&labelColor=0b0b0b" alt="Followers"/></a>
+<a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=E03A4E&label=STARS&color=1a0a0d&labelColor=0b0b0b" alt="Stars"/></a>
+<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=1a0a0d&labelColor=0b0b0b" alt="Visitors"/>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
 
 <div align="center">
 
-### 01 — THE DEVELOPER
-
-**I don't just want to understand technology. I want to build with it.**
+### `[ 01 ]` &nbsp; WHOAMI
 
 </div>
 
 <table>
 <tr>
-<td width="65%" valign="middle">
+<td width="62%" valign="middle">
 
-I'm **LynkqUK**, an aspiring software developer interested in programming, software engineering and digital products.
+```ini
+[identity]
+name      = LynkqUK
+role      = aspiring software developer
+status    = online, building
 
-I enjoy exploring how technology works, experimenting with different languages and turning ideas into real projects.
+[focus]
+now       = leveling up my dev skills
+method    = learn -> experiment -> build -> repeat
+rule      = progress over perfection
 
-<br/>
-
-- **INTERESTS** — Software, programming & technology
-- **CURRENT FOCUS** — Improving my development skills
-- **MINDSET** — Learn, experiment, build, repeat
-- **GOAL** — Create meaningful things through code
-
-<br/>
-
-*The goal is progress, not perfection.*
+[mission]
+goal      = create meaningful things through code
+```
 
 </td>
-<td width="35%" align="center" valign="middle">
+<td width="38%" align="center" valign="middle">
 
-<img src="https://github.com/LynkqUK.png" width="180" alt="LynkqUK GitHub avatar"/>
+<img src="https://github.com/LynkqUK.png" width="170" alt="LynkqUK avatar"/>
 
 <br/><br/>
 
-**LYNKQUK**
-
-<sub>DEVELOPER IN PROGRESS</sub>
+<img src="https://img.shields.io/badge/STATUS-BUILDING-E03A4E?style=flat-square&labelColor=0b0b0b" alt="Status"/>
+<img src="https://img.shields.io/badge/MODE-LOCKED_IN-8B2635?style=flat-square&labelColor=0b0b0b" alt="Mode"/>
 
 </td>
 </tr>
 </table>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
 
 <div align="center">
 
-### 02 — ARSENAL
+### `[ 02 ]` &nbsp; ARSENAL
 
-<sub>LANGUAGES · TECHNOLOGIES · TOOLS</sub>
+<br/>
 
+<img src="https://skillicons.dev/icons?i=python,cpp,html,css,js&theme=dark" alt="Languages"/>
 <br/><br/>
-
-**PROGRAMMING LANGUAGES**
-
-<img src="https://skillicons.dev/icons?i=python,cpp,html,css,js&theme=dark" alt="Programming languages"/>
-
-<br/><br/>
-
-**DEVELOPMENT ENVIRONMENT**
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux&theme=dark" alt="Development tools"/>
+<img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux&theme=dark" alt="Tools"/>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
 
 <div align="center">
 
-### 03 — GITHUB INTELLIGENCE
+### `[ 03 ]` &nbsp; GITHUB INTEL
 
-<sub>THE WORK SPEAKS FOR ITSELF.</sub>
+<br/>
 
-<br/><br/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0D0D0D&title_color=B8323E&icon_color=B8323E&text_color=C9C9C9&ring_color=8B2635&include_all_commits=true&rank_icon=github" alt="LynkqUK GitHub statistics"/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0D0D0D&title_color=B8323E&text_color=C9C9C9&langs_count=6" alt="LynkqUK most used languages"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0b0b0b&title_color=E03A4E&icon_color=E03A4E&text_color=C9C9C9&ring_color=E03A4E&include_all_commits=true&rank_icon=github" alt="Stats"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0b0b0b&title_color=E03A4E&text_color=C9C9C9&langs_count=6" alt="Top languages"/>
 
 <br/><br/>
 
-<img width="75%" src="https://streak-stats.demolab.com?user=LynkqUK&theme=dark&hide_border=true&background=0D0D0D&ring=B8323E&fire=B8323E&currStreakLabel=B8323E&sideLabels=C9C9C9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=777777" alt="GitHub contribution streak"/>
+<img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=0b0b0b&ring=E03A4E&fire=E03A4E&currStreakLabel=E03A4E&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9C9C9&dates=777777" alt="Streak"/>
 
 <br/><br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0D0D0D&color=C9C9C9&line=B8323E&point=FFFFFF&area=true&area_color=46151C&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="LynkqUK GitHub activity graph"/>
+<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0b0b0b&color=C9C9C9&line=E03A4E&point=FFFFFF&area=true&area_color=E03A4E&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="Activity graph"/>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
 
 <div align="center">
 
-### 04 — CONTRIBUTION MATRIX
-
-<sub>EVERY COMMIT LEAVES A MARK.</sub>
-
-<br/><br/>
+### `[ 04 ]` &nbsp; CONTRIBUTION SNAKE
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake.svg">
-  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="LynkqUK contribution snake"/>
+  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake"/>
 </picture>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,8B2635,0&height=2" width="100%" alt=""/>
 
 <div align="center">
 
-### 05 — TRANSMISSION
+### `[ 05 ]` &nbsp; TRANSMISSION
 
-**Have something worth building? Let's connect.**
+**Got something worth building? Let's talk.**
 
-<br/><br/>
+<br/>
 
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
-  <img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=B8323E" alt="LinkedIn"/>
-</a>
-<a href="https://x.com/YOUR_X_USERNAME">
-  <img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=FFFFFF" alt="X"/>
-</a>
-<a href="https://www.instagram.com/YOUR_INSTAGRAM">
-  <img src="https://img.shields.io/badge/INSTAGRAM-111111?style=for-the-badge&logo=instagram&logoColor=B8323E" alt="Instagram"/>
-</a>
-<a href="https://www.tiktok.com/@YOUR_TIKTOK">
-  <img src="https://img.shields.io/badge/TIKTOK-111111?style=for-the-badge&logo=tiktok&logoColor=FFFFFF" alt="TikTok"/>
-</a>
-<a href="https://www.youtube.com/@YOUR_YOUTUBE">
-  <img src="https://img.shields.io/badge/YOUTUBE-111111?style=for-the-badge&logo=youtube&logoColor=B8323E" alt="YouTube"/>
-</a>
-<a href="mailto:YOUR_EMAIL@example.com">
-  <img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=B8323E" alt="Email"/>
-</a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LINKEDIN-0b0b0b?style=for-the-badge&logo=linkedin&logoColor=E03A4E" alt="LinkedIn"/></a>
+<a href="https://x.com/YOUR_X_USERNAME"><img src="https://img.shields.io/badge/X-0b0b0b?style=for-the-badge&logo=x&logoColor=FFFFFF" alt="X"/></a>
+<a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="https://img.shields.io/badge/INSTAGRAM-0b0b0b?style=for-the-badge&logo=instagram&logoColor=E03A4E" alt="Instagram"/></a>
+<a href="https://www.tiktok.com/@YOUR_TIKTOK"><img src="https://img.shields.io/badge/TIKTOK-0b0b0b?style=for-the-badge&logo=tiktok&logoColor=FFFFFF" alt="TikTok"/></a>
+<a href="https://www.youtube.com/@YOUR_YOUTUBE"><img src="https://img.shields.io/badge/YOUTUBE-0b0b0b?style=for-the-badge&logo=youtube&logoColor=E03A4E" alt="YouTube"/></a>
+<a href="mailto:YOUR_EMAIL@example.com"><img src="https://img.shields.io/badge/EMAIL-0b0b0b?style=for-the-badge&logo=gmail&logoColor=E03A4E" alt="Email"/></a>
 
 <br/><br/>
 
@@ -172,18 +128,4 @@ I enjoy exploring how technology works, experimenting with different languages a
 
 </div>
 
----
-
-<div align="center">
-
-<br/>
-
-**LYNKQUK**
-
-<sub>BUILT WITH INTENTION. DRIVEN BY CURIOSITY.</sub>
-
-<br/><br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:080808,50:301015,100:8B2635&height=110&section=footer" alt="Dark crimson footer"/>
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,8B2635,12,0b0b0b&height=120&section=footer" width="100%" alt=""/>
