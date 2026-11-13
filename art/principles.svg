@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 170" width="880" height="170" role="img" aria-label="Operating principles: systems, clean code, small loops, in public">
+<defs></defs>
+<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 8s linear infinite}
+.spin2{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.glow{animation:gw 2.4s ease-in-out infinite}
+@keyframes gw{0%,100%{opacity:.5}50%{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.6s ease-out infinite}
+@keyframes rip{from{transform:scale(.3);opacity:.9}to{transform:scale(1.5);opacity:0}}
+</style>
+
+<g transform="translate(0,0)">
+  <rect x="1" y="1" width="203" height="168" rx="12" fill="#120709" stroke="#46151C" stroke-width="2"/>
+  <circle class="spin" cx="102.5" cy="52" r="24" fill="none" stroke="#E03A4E" stroke-width="2" stroke-dasharray="10 8"/><circle cx="102.5" cy="52" r="6" fill="#E03A4E"/>
+  <text x="102.5" y="116" text-anchor="middle" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="3">SYSTEMS</text>
+  <text x="102.5" y="142" text-anchor="middle" font-size="12" fill="#6B6B6B">over motivation</text>
+</g>
+<g transform="translate(225,0)">
+  <rect x="1" y="1" width="203" height="168" rx="12" fill="#120709" stroke="#46151C" stroke-width="2"/>
+  <text class="glow" x="102.5" y="62" text-anchor="middle" font-size="28" font-weight="800" fill="#E03A4E">&lt;/&gt;</text>
+  <text x="102.5" y="116" text-anchor="middle" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="3">CLEAN CODE</text>
+  <text x="102.5" y="142" text-anchor="middle" font-size="12" fill="#6B6B6B">readable first</text>
+</g>
+<g transform="translate(450,0)">
+  <rect x="1" y="1" width="203" height="168" rx="12" fill="#120709" stroke="#46151C" stroke-width="2"/>
+  <circle cx="102.5" cy="52" r="24" fill="none" stroke="#46151C" stroke-width="3"/><circle class="spin2" cx="102.5" cy="52" r="24" fill="none" stroke="#E03A4E" stroke-width="3" stroke-dasharray="38 120" stroke-linecap="round"/>
+  <text x="102.5" y="116" text-anchor="middle" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="3">SMALL LOOPS</text>
+  <text x="102.5" y="142" text-anchor="middle" font-size="12" fill="#6B6B6B">ship, learn, repeat</text>
+</g>
+<g transform="translate(675,0)">
+  <rect x="1" y="1" width="203" height="168" rx="12" fill="#120709" stroke="#46151C" stroke-width="2"/>
+  <circle class="rip" cx="102.5" cy="52" r="24" fill="none" stroke="#E03A4E" stroke-width="2"/><circle class="rip" cx="102.5" cy="52" r="24" fill="none" stroke="#E03A4E" stroke-width="2" style="animation-delay:1.3s"/><circle cx="102.5" cy="52" r="6" fill="#E03A4E"/>
+  <text x="102.5" y="116" text-anchor="middle" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="3">IN PUBLIC</text>
+  <text x="102.5" y="142" text-anchor="middle" font-size="12" fill="#6B6B6B">commit daily</text>
+</g>
+</svg>

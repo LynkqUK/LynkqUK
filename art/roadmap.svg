@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260" role="img" aria-label="Roadmap: 2 of 8 goals complete">
+<defs><linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF6B7D" stop-opacity="0"/><stop offset="0.5" stop-color="#FF6B7D" stop-opacity="1"/><stop offset="1" stop-color="#FF6B7D" stop-opacity="0"/></linearGradient><clipPath id="bc"><rect x="36" y="58" width="740" height="10" rx="5"/></clipPath></defs>
+<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.chk{stroke-dasharray:40;stroke-dashoffset:40;animation:chk .6s ease-out forwards}
+@keyframes chk{to{stroke-dashoffset:0}}
+.pend{animation:pd 3s ease-in-out infinite}
+@keyframes pd{0%,100%{opacity:.4}50%{opacity:1}}
+.gl{animation:sw 4s ease-in-out infinite}
+@keyframes sw{from{transform:translateX(-80px)}to{transform:translateX(260px)}}
+</style>
+
+<rect x="1" y="1" width="878" height="258" rx="14" fill="#120709" stroke="#46151C" stroke-width="2"/>
+<text x="36" y="42" font-size="12" letter-spacing="4" fill="#E03A4E">PROGRESS</text>
+<text x="776" y="42" font-size="12" letter-spacing="3" fill="#6B6B6B" text-anchor="end">2 / 8 COMPLETE</text>
+<rect x="36" y="58" width="740" height="10" rx="5" fill="#1C0A0D"/>
+<g clip-path="url(#bc)"><rect x="36" y="58" width="0" height="10" fill="#E03A4E"><animate attributeName="width" from="0" to="185" dur="1.4s" begin="0.3s" fill="freeze"/></rect>
+<rect class="gl" x="36" y="58" width="80" height="10" fill="url(#gl)"/></g>
+<text x="800" y="68" font-size="13" font-weight="700" fill="#FFFFFF">25%</text>
+<line x1="28" y1="92" x2="852" y2="92" stroke="#46151C"/>
+<rect x="36" y="102" width="20" height="20" rx="5" fill="#1C0A0D" stroke="#E03A4E" stroke-width="2"/><path class="chk" d="M40 112 L45 118 L53 106" fill="none" stroke="#E03A4E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.5s"/><text x="70" y="118" font-size="14" fill="#FFFFFF">set up the profile</text><rect x="36" y="136" width="20" height="20" rx="5" fill="#1C0A0D" stroke="#E03A4E" stroke-width="2"/><path class="chk" d="M40 146 L45 152 L53 140" fill="none" stroke="#E03A4E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.9s"/><text x="70" y="152" font-size="14" fill="#FFFFFF">lock in a daily coding habit</text><rect class="pend" x="36" y="170" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:0.6s"/><text x="70" y="186" font-size="14" fill="#6B6B6B">ship a first full project</text><rect class="pend" x="36" y="204" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:0.8999999999999999s"/><text x="70" y="220" font-size="14" fill="#6B6B6B">push a project to production</text><rect class="pend" x="466" y="102" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:1.2s"/><text x="500" y="118" font-size="14" fill="#6B6B6B">go deeper on C++ and data structures</text><rect class="pend" x="466" y="136" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:1.5s"/><text x="500" y="152" font-size="14" fill="#6B6B6B">make a first open-source contribution</text><rect class="pend" x="466" y="170" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:1.7999999999999998s"/><text x="500" y="186" font-size="14" fill="#6B6B6B">build something other people use</text><rect class="pend" x="466" y="204" width="20" height="20" rx="5" fill="none" stroke="#8B2635" stroke-width="2" stroke-dasharray="4 4" style="animation-delay:2.1s"/><text x="500" y="220" font-size="14" fill="#6B6B6B">keep the streak alive</text>
+
+</svg>

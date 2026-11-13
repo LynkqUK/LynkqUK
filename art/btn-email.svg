@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 52" width="150" height="52" role="img" aria-label="EMAIL button">
+<defs></defs>
+<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.run{stroke-dasharray:60 344;animation:run 3.2s linear infinite}
+@keyframes run{to{stroke-dashoffset:-404}}
+.dot{animation:dot 1.6s ease-in-out infinite}
+@keyframes dot{0%,100%{opacity:.35}50%{opacity:1}}
+</style>
+
+<rect x="1" y="1" width="148" height="50" rx="10" fill="#120709" stroke="#46151C" stroke-width="2"/>
+<rect class="run" x="1" y="1" width="148" height="50" rx="10" fill="none" stroke="#E03A4E" stroke-width="2"/>
+<circle class="dot" cx="20" cy="26.0" r="4" fill="#E03A4E"/>
+<text x="83.0" y="31.0" text-anchor="middle" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="3">EMAIL</text>
+
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 318" width="880" height="318" role="img" aria-label="Animated ID card for LynkqUK with a radar">
+<defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E03A4E" stop-opacity="0"/><stop offset="1" stop-color="#E03A4E" stop-opacity="0.45"/></linearGradient><clipPath id="cp"><rect x="1" y="1" width="878" height="316" rx="14"/></clipPath></defs>
+<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.dot{animation:dot 1.4s steps(1) infinite}
+@keyframes dot{0%,49%{opacity:1}50%,100%{opacity:.15}}
+.caret{animation:dot 1s steps(1) infinite;animation-delay:4.2s;opacity:0}
+.bd{stroke-dasharray:90 1900;animation:bd 6s linear infinite}
+@keyframes bd{to{stroke-dashoffset:-1990}}
+</style>
+
+<rect x="1" y="1" width="878" height="316" rx="14" fill="#0B0B0B" stroke="#46151C" stroke-width="2"/>
+<rect x="1" y="1" width="878" height="40" rx="14" fill="#140709"/><rect x="1" y="26" width="878" height="15" fill="#140709"/>
+<circle cx="28" cy="21" r="6" fill="#E03A4E"/><circle cx="50" cy="21" r="6" fill="#8B2635"/><circle cx="72" cy="21" r="6" fill="#46151C"/>
+<text x="440.0" y="26" text-anchor="middle" font-size="13" fill="#6B6B6B">~/lynkquk/profile.ini</text>
+<text x="34" y="66" font-size="12" letter-spacing="3" fill="#6B6B6B">[ IDENTITY ]</text>
+<line x1="28" y1="74" x2="580" y2="74" stroke="#46151C" stroke-width="1"/>
+<g clip-path="url(#k0)"><text x="34" y="92" font-size="15" fill="#E03A4E">identity</text><text x="138" y="92" font-size="15" fill="#6B6B6B">=</text><text x="162" y="92" font-size="15" fill="#FFFFFF">LynkqUK</text></g><g clip-path="url(#k1)"><text x="34" y="120" font-size="15" fill="#E03A4E">role</text><text x="138" y="120" font-size="15" fill="#6B6B6B">=</text><text x="162" y="120" font-size="15" fill="#C9C9C9">aspiring software developer</text></g><g clip-path="url(#k2)"><text x="34" y="148" font-size="15" fill="#E03A4E">status</text><text x="138" y="148" font-size="15" fill="#6B6B6B">=</text><text x="162" y="148" font-size="15" fill="#C9C9C9">online, building</text></g><g clip-path="url(#k3)"><text x="34" y="176" font-size="15" fill="#E03A4E">focus</text><text x="138" y="176" font-size="15" fill="#6B6B6B">=</text><text x="162" y="176" font-size="15" fill="#C9C9C9">leveling up my dev skills</text></g><g clip-path="url(#k4)"><text x="34" y="204" font-size="15" fill="#E03A4E">method</text><text x="138" y="204" font-size="15" fill="#6B6B6B">=</text><text x="162" y="204" font-size="15" fill="#C9C9C9">learn -&gt; experiment -&gt; build -&gt; repeat</text></g><g clip-path="url(#k5)"><text x="34" y="232" font-size="15" fill="#E03A4E">rule</text><text x="138" y="232" font-size="15" fill="#6B6B6B">=</text><text x="162" y="232" font-size="15" fill="#C9C9C9">progress over perfection</text></g><g clip-path="url(#k6)"><text x="34" y="260" font-size="15" fill="#E03A4E">mission</text><text x="138" y="260" font-size="15" fill="#6B6B6B">=</text><text x="162" y="260" font-size="15" fill="#C9C9C9">create meaningful things through code</text></g>
+<rect class="caret" x="510" y="246" width="9" height="18" fill="#E03A4E"/>
+<text x="34" y="300" font-size="12" fill="#6B6B6B"><tspan class="dot" fill="#E03A4E">&#9679;</tspan>  STATUS: BUILDING</text>
+<g>
+  <circle cx="736" cy="174" r="96" fill="#0E0507" stroke="#46151C" stroke-width="2"/>
+  <circle cx="736" cy="174" r="64" fill="none" stroke="#46151C"/>
+  <circle cx="736" cy="174" r="32" fill="none" stroke="#46151C"/>
+  <line x1="640" y1="174" x2="832" y2="174" stroke="#46151C"/><line x1="736" y1="78" x2="736" y2="270" stroke="#46151C"/>
+  <g>
+    <path d="M736 174 L832 174 A96 96 0 0 0 809.5 112.3 Z" fill="url(#wg)"/>
+    <line x1="736" y1="174" x2="832" y2="174" stroke="#FF8A98" stroke-width="2"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 736 174" to="360 736 174" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <circle cx="776" cy="124" r="3" fill="#FF8A98" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="r" values="2;6;2" dur="4s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="681" cy="204" r="3" fill="#FF8A98" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4s" begin="1.9s" repeatCount="indefinite"/><animate attributeName="r" values="2;6;2" dur="4s" begin="1.9s" repeatCount="indefinite"/></circle><circle cx="756" cy="236" r="3" fill="#FF8A98" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="r" values="2;6;2" dur="4s" begin="3.0s" repeatCount="indefinite"/></circle>
+  <circle cx="736" cy="174" r="3.5" fill="#FFFFFF"/>
+</g>
+<text x="736" y="300" text-anchor="middle" font-size="11" letter-spacing="4" fill="#6B6B6B">SCANNING</text>
+
+</svg>
