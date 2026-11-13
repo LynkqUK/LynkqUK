@@ -78,16 +78,17 @@ goal      = create meaningful things through code
 
 <br/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0b0b0b&title_color=E03A4E&icon_color=E03A4E&text_color=C9C9C9&ring_color=E03A4E&include_all_commits=true&rank_icon=github" alt="Stats"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0b0b0b&title_color=E03A4E&text_color=C9C9C9&langs_count=6" alt="Top languages"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages"/>
+
+<br/><br/>
+
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/4-productive-time.svg" alt="Productive time"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos per language"/>
 
 <br/><br/>
 
 <img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=0b0b0b&ring=E03A4E&fire=E03A4E&currStreakLabel=E03A4E&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9C9C9&dates=777777" alt="Streak"/>
-
-<br/><br/>
-
-<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0b0b0b&color=C9C9C9&line=E03A4E&point=FFFFFF&area=true&area_color=E03A4E&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="Activity graph"/>
 
 </div>
 
@@ -98,9 +99,9 @@ goal      = create meaningful things through code
 ### `[ 04 ]` &nbsp; CONTRIBUTION SNAKE
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake.svg">
-  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-snake.svg">
+  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-snake-dark.svg" alt="Contribution snake"/>
 </picture>
 
 </div>
@@ -115,6 +116,7 @@ goal      = create meaningful things through code
 
 <br/>
 
+<a href="https://discord.com/users/YOUR_DISCORD_ID"><img src="https://img.shields.io/badge/DISCORD-0b0b0b?style=for-the-badge&logo=discord&logoColor=E03A4E" alt="Discord"/></a>
 <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LINKEDIN-0b0b0b?style=for-the-badge&logo=linkedin&logoColor=E03A4E" alt="LinkedIn"/></a>
 <a href="https://x.com/YOUR_X_USERNAME"><img src="https://img.shields.io/badge/X-0b0b0b?style=for-the-badge&logo=x&logoColor=FFFFFF" alt="X"/></a>
 <a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="https://img.shields.io/badge/INSTAGRAM-0b0b0b?style=for-the-badge&logo=instagram&logoColor=E03A4E" alt="Instagram"/></a>
