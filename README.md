@@ -1,126 +1,243 @@
+ <div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.svg">
-  <img alt="RLynkqUK" src="art/header-light.svg">
+  <img alt="LynkqUK" src="art/header-light.svg" width="100%">
 </picture>
 
-<br><br>
-<div align="center">
-<sub>BUILDER &nbsp;·&nbsp; STUDENT &nbsp;·&nbsp; ALWAYS SHIPPING</sub>
+<br/>
 
-<br><br>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=B8323E&center=true&vCenter=true&width=650&lines=ASPIRING+SOFTWARE+DEVELOPER;BUILDING+IDEAS+INTO+REALITY;ENGINEERING+THE+NEXT+CHAPTER;THINK.+BUILD.+REFINE." alt="Typing animation"/>
 
-<a href="https://github.com/RLynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/RLynkqUK?style=flat-square&label=followers&labelColor=0d1117&color=58a6ff" alt="followers"></a>
-<a href="https://github.com/RLynkqUK?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=0d1117&color=58a6ff&label=repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FRLynkqUK" alt="repos"></a>
-<img src="https://komarev.com/ghpvc/?username=RLynkqUK&style=flat-square&label=views&labelColor=0d1117&color=58a6ff" alt="profile views">
+<br/>
 
-<br><br>
+**ASPIRING DEVELOPER · BUILDER · PROBLEM SOLVER**
 
-<a href="#about">About</a> &nbsp;/&nbsp;
-<a href="#stack">Stack</a> &nbsp;/&nbsp;
-<a href="#activity">Activity</a> &nbsp;/&nbsp;
-<a href="#contact">Contact</a>
+<br/>
+
+<a href="https://github.com/LynkqUK">
+<img src="https://img.shields.io/github/followers/LynkqUK?style=flat-square&logo=github&logoColor=white&label=FOLLOWERS&color=8B2635&labelColor=111111"/>
+</a>
+<a href="https://github.com/LynkqUK?tab=repositories">
+<img src="https://img.shields.io/github/stars/LynkqUK?style=flat-square&logo=github&logoColor=white&label=STARS&color=8B2635&labelColor=111111"/>
+</a>
+<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=flat-square&color=8B2635&label=VISITORS"/>
+
+<br/><br/>
+
+<sub>INDEPENDENT THINKING. CONTINUOUS IMPROVEMENT.</sub>
 
 </div>
 
-<br>
-
-<a id="about"></a>
+---
 
 <div align="center">
 
-### &nbsp;about&nbsp;
+### 01 — THE DEVELOPER
 
-<pre>
-┌──────────────────────────────────────────────┐
-│                                              │
-│   name        RLynkqUK                       │
-│   status      building in public             │
-│   focus       shipping small, learning fast  │
-│   languages   English · Français · العربية   │
-│   approach    systems over motivation        │
-│                                              │
-└──────────────────────────────────────────────┘
-</pre>
-
-<sub>I like clean code, small feedback loops, and projects that actually get finished.</sub>
+**I don't just want to understand technology. I want to build with it.**
 
 </div>
 
-<br>
+<table>
+<tr>
+<td width="65%" valign="middle">
 
-<a id="stack"></a>
+I'm **LynkqUK**, an aspiring software developer interested in programming, software engineering and digital products.
+
+I enjoy exploring how technology works, experimenting with different languages and turning ideas into real projects.
+
+<br/>
+
+- **INTERESTS** — Software, programming & technology
+- **CURRENT FOCUS** — Improving my development skills
+- **MINDSET** — Learn, experiment, build, repeat
+- **GOAL** — Create meaningful things through code
+
+<br/>
+
+*The goal is progress, not perfection.*
+
+</td>
+<td width="35%" align="center" valign="middle">
+
+<img src="https://github.com/LynkqUK.png" width="180" alt="LynkqUK GitHub avatar" style="border-radius: 12px;"/>
+
+<br/><br/>
+
+**LYNKQUK**
+
+<sub>DEVELOPER IN PROGRESS</sub>
+
+</td>
+</tr>
+</table>
+
+---
 
 <div align="center">
 
-### &nbsp;stack&nbsp;
+### 02 — ARSENAL
 
-<br>
+<sub>LANGUAGES · TECHNOLOGIES · TOOLS</sub>
 
-<img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=58a6ff" alt="Python">
-<img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=58a6ff" alt="JavaScript">
-<img src="https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=58a6ff" alt="TypeScript">
-<img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=58a6ff" alt="React">
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=58a6ff" alt="Node.js">
-<br>
-<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=58a6ff" alt="PostgreSQL">
-<img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=58a6ff" alt="Git">
-<img src="https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=58a6ff" alt="Linux">
-<img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=58a6ff" alt="Vercel">
+<br/><br/>
+
+**PROGRAMMING LANGUAGES**
+
+<img src="https://skillicons.dev/icons?i=python,cpp,html,css,js&theme=dark" alt="Programming languages"/>
+
+<br/><br/>
+
+**DEVELOPMENT ENVIRONMENT**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux&theme=dark" alt="Development tools"/>
 
 </div>
 
-<br>
-
-<a id="activity"></a>
+---
 
 <div align="center">
 
-### &nbsp;activity&nbsp;
+### 03 — GITHUB INTELLIGENCE
 
-<br>
+<sub>THE WORK SPEAKS FOR ITSELF.</sub>
+
+<br/><br/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LynkqUK&show_icons=true&hide_border=true&bg_color=0D0D0D&title_color=B8323E&icon_color=B8323E&text_color=C9C9C9&ring_color=8B2635&include_all_commits=true&rank_icon=github" alt="GitHub statistics"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LynkqUK&layout=compact&hide_border=true&bg_color=0D0D0D&title_color=B8323E&text_color=C9C9C9&langs_count=6" alt="Most used languages"/>
+
+<br/><br/>
+
+<img width="75%" src="https://streak-stats.demolab.com?user=LynkqUK&theme=dark&hide_border=true&background=0D0D0D&ring=B8323E&fire=B8323E&currStreakLabel=B8323E&sideLabels=C9C9C9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=777777" alt="GitHub contribution streak"/>
+
+<br/><br/>
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=LynkqUK&bg_color=0D0D0D&color=C9C9C9&line=B8323E&point=FFFFFF&area=true&area_color=46151C&hide_border=true&custom_title=DEVELOPMENT%20ACTIVITY" alt="GitHub activity graph"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### 04 — CONTRIBUTION MATRIX
+
+<sub>EVERY COMMIT LEAVES A MARK.</sub>
+
+<br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=RLynkqUK&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&hide_title=true&rank_icon=github&card_width=400">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=RLynkqUK&show_icons=true&hide_border=true&bg_color=ffffff&title_color=0969da&icon_color=0969da&text_color=24292f&hide_title=true&rank_icon=github&card_width=400">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=RLynkqUK&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&hide_title=true&card_width=300">
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RLynkqUK&layout=compact&hide_border=true&bg_color=ffffff&title_color=0969da&text_color=24292f&hide_title=true&card_width=300">
-</picture>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=RLynkqUK&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&currStreakNum=c9d1d9&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e">
-  <img alt="Streak" src="https://streak-stats.demolab.com?user=RLynkqUK&hide_border=true&background=ffffff&ring=0969da&fire=0969da&currStreakLabel=0969da&currStreakNum=24292f&sideNums=24292f&sideLabels=57606a&dates=57606a">
-</picture>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=RLynkqUK&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=ffffff&area=true&area_color=58a6ff&hide_border=true&height=260">
-  <img alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=RLynkqUK&bg_color=ffffff&color=24292f&line=0969da&point=24292f&area=true&area_color=0969da&hide_border=true&height=260">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake.svg">
+  <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake"/>
 </picture>
 
 </div>
 
-<br>
+<!--
+==========================================================
+GITHUB CONTRIBUTION SNAKE AUTOMATION
+==========================================================
 
-<a id="contact"></a>
+Create a separate file:
+
+.github/workflows/snake.yml
+
+Paste this workflow into it:
+
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: LynkqUK
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+IMPORTANT:
+1. Enable GitHub Actions.
+2. Run the workflow manually.
+3. Wait for the output branch to be created.
+4. The snake will update automatically every day.
+
+==========================================================
+-->
+
+---
 
 <div align="center">
 
-### &nbsp;contact&nbsp;
+### 05 — TRANSMISSION
 
-<br>
+**Have something worth building? Let's connect.**
 
-<a href="https://github.com/RLynkqUK"><img src="https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://x.com/yourhandle"><img src="https://img.shields.io/badge/X-0d1117?style=flat-square&logo=x&logoColor=white" alt="X"></a>
-<a href="https://linkedin.com/in/yourhandle"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<br/><br/>
 
-<br><br><br>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=B8323E"/>
+</a>
+<a href="https://x.com/YOUR_X_USERNAME">
+<img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=FFFFFF"/>
+</a>
+<a href="https://www.instagram.com/YOUR_INSTAGRAM">
+<img src="https://img.shields.io/badge/INSTAGRAM-111111?style=for-the-badge&logo=instagram&logoColor=B8323E"/>
+</a>
+<a href="https://www.tiktok.com/@YOUR_TIKTOK">
+<img src="https://img.shields.io/badge/TIKTOK-111111?style=for-the-badge&logo=tiktok&logoColor=FFFFFF"/>
+</a>
+<a href="https://www.youtube.com/@YOUR_YOUTUBE">
+<img src="https://img.shields.io/badge/YOUTUBE-111111?style=for-the-badge&logo=youtube&logoColor=B8323E"/>
+</a>
+<a href="mailto:YOUR_EMAIL@example.com">
+<img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=B8323E"/>
+</a>
 
-<sub>made with intention &nbsp;·&nbsp; RLynkqUK &nbsp;·&nbsp; 2026</sub>
+<br/><br/>
+
+<sub>OPEN TO LEARNING · BUILDING · COLLABORATING</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+<br/>
+
+**LYNKQUK**
+
+<sub>BUILT WITH INTENTION. DRIVEN BY CURIOSITY.</sub>
+
+<br/><br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:080808,50:301015,100:8B2635&height=110&section=footer" alt="Dark crimson footer"/>
 
 </div>
