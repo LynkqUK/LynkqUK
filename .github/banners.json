@@ -50,8 +50,8 @@
   },
   "contact": {
     "title": "Contact",
-    "sub": "Say hi on Discord.",
-    "pill": "discord",
+    "sub": "Discord or email.",
+    "pill": "discord · email",
     "word": "HELLO"
   },
   "footer": {
@@ -343,5 +343,58 @@
     "sub": "GitHub, auto-updated.",
     "pill": "live data",
     "word": "STATS"
+  },
+  "skills": {
+    "title": "Skills",
+    "sub": "Honest levels.",
+    "pill": "always learning",
+    "stats": [
+      [
+        "python",
+        7,
+        "daily driver"
+      ],
+      [
+        "c++",
+        4,
+        "getting there"
+      ],
+      [
+        "html / css",
+        7,
+        "comfortable"
+      ],
+      [
+        "javascript",
+        5,
+        "in progress"
+      ],
+      [
+        "git",
+        7,
+        "commit often"
+      ]
+    ]
+  },
+  "day": {
+    "steps": [
+      "wake",
+      "gym",
+      "study",
+      "code",
+      "chess",
+      "sleep?"
+    ],
+    "caption": "repeat daily. bugs expected."
+  },
+  "btn_discord": {
+    "label": "discord",
+    "value": "send me a message",
+    "fs": 34
+  },
+  "btn_email": {
+    "label": "email",
+    "value": "lynkqbusiness.gg@gmail.com",
+    "fs": 29
   }
 }

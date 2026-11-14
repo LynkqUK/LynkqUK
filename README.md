@@ -41,11 +41,19 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <br><br>
 
+<img src="art/skills.svg" width="100%" alt="Skills: python, c++, html and css, javascript, git">
+
+<br><br>
+
 <img src="art/stack.svg" width="100%" alt="Stack: what I work with">
 
 <br><br>
 
 <img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
+
+<br><br>
+
+<img src="art/day.svg" width="100%" alt="A day: wake, gym, study, code, chess, sleep. Repeat daily, bugs expected.">
 
 <br><br>
 
@@ -105,7 +113,12 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <p><b>Got a problem worth solving, a project that needs a second brain, or a chess game to lose?</b><br>
 Show me what you've tried first, then we'll get along fine.<br>
-Fastest way to reach me is Discord, button below.</p>
+Fastest way to reach me is Discord or email, buttons below.</p>
+
+<br><br>
+
+<a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" width="46%" alt="Discord"></a>
+<a href="mailto:lynkqbusiness.gg@gmail.com"><img src="art/btn-email.svg" width="46%" alt="Email: lynkqbusiness.gg@gmail.com"></a>
 
 <br><br>
 

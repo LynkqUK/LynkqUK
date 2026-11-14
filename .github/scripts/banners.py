@@ -485,6 +485,28 @@ def knight_tour(name, c):
     print("wrote", name, len(svg) // 1024, "KB")
 
 
+# ------------------------------------------------------------------ contact buttons
+def button_banner(name, c):
+    w, h = 760, 150
+    cx, cy = 78, h / 2
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(c["label"])}: {esc(c["value"])}">'
+        f'<title>{esc(c["label"])}: {esc(c["value"])}</title><style>{STYLE}'
+        f'.sw{{animation:sw 4.5s ease-in-out infinite}}@keyframes sw{{from{{transform:translateX(-260px) skewX(-18deg)}}to{{transform:translateX({w + 260}px) skewX(-18deg)}}}}'
+        f'.ring{{transform-origin:{cx}px {cy}px;animation:rg 2.4s ease-out infinite}}@keyframes rg{{from{{transform:scale(1);opacity:.55}}to{{transform:scale(2.1);opacity:0}}}}</style>'
+        f'<defs><clipPath id="p"><rect x="4" y="4" width="{w - 8}" height="{h - 8}" rx="{(h - 8) / 2}"/></clipPath>'
+        f'<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>'
+        f'<rect x="4" y="4" width="{w - 8}" height="{h - 8}" rx="{(h - 8) / 2}" fill="{PILL_BG}" stroke="{RAMP[2]}" stroke-width="2.5"/>'
+        f'<g clip-path="url(#p)" class="motion-only"><rect class="sw" x="0" y="0" width="240" height="{h}" fill="url(#g)"/></g>'
+        f'<circle class="ring motion-only" cx="{cx}" cy="{cy}" r="16" fill="none" stroke="{TITLE}" stroke-width="2"/>'
+        f'<circle cx="{cx}" cy="{cy}" r="16" fill="{TITLE}"/>'
+        f'<text x="124" y="{cy - 6}" {FIRA} font-size="22" font-weight="500" fill="{SUB}" letter-spacing="3">{esc(c["label"].upper())}</text>'
+        f'<text x="124" y="{cy + 34}" {FIRA} font-size="{c.get("fs", 30)}" font-weight="500" fill="{TITLE}">{esc(c["value"])}</text></svg>'
+    )
+    (OUT / name).write_text(svg)
+    print("wrote", name, len(svg) // 1024, "KB")
+
+
 # ------------------------------------------------------------------ the loop (animated)
 def loop_strip(name, c):
     steps = c["steps"][:6]
@@ -589,6 +611,10 @@ def main():
     word_banner("stack.svg", CFG["stack"], 34)
     tools_strip("tools.svg", CFG["tools"])
     sheet_banner("sheet.svg", CFG["sheet"], 63)
+    sheet_banner("skills.svg", CFG["skills"], 71)
+    loop_strip("day.svg", CFG["day"])
+    button_banner("btn-discord.svg", CFG["btn_discord"])
+    button_banner("btn-email.svg", CFG["btn_email"])
     knight_tour("knight.svg", CFG["knight"])
     lines_banner("games.svg", CFG["games"], 77)
     word_banner("numbers.svg", CFG["numbers"], 99)
