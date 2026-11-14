@@ -1,0 +1,46 @@
+{
+  "user": "LynkqUK",
+
+  "about": {
+    "title": "About",
+    "sub": "Learning to build software.",
+    "pill": "python · c++",
+    "word": "BUILD"
+  },
+
+  "now": {
+    "title": "Now",
+    "sub": "What I'm working on.",
+    "pill": "in progress",
+    "lines": [
+      ["learning", "c++ and python"],
+      ["building", "a first full project"],
+      ["reading", "other people's code"]
+    ]
+  },
+
+  "stack": {
+    "title": "Stack",
+    "sub": "What I work with.",
+    "pill": "git · linux · web",
+    "word": "PYTHON"
+  },
+
+  "tools": ["python", "c++", "html", "css", "javascript", "git", "linux"],
+
+  "activity": {
+    "title": "Activity",
+    "sub": "Last 37 weeks on GitHub."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "sub": "Say hi on Discord.",
+    "pill": "discord",
+    "word": "HELLO"
+  },
+
+  "footer": {
+    "text": "LynkqUK · 2026"
+  }
+}

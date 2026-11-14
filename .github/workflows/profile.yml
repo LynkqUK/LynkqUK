@@ -39,3 +39,21 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-summary-card-output/lynkquk
           git diff --cached --quiet || (git commit -m "Recolor summary cards to profile theme" && git push)
+
+  banners:
+    name: Rebuild banners
+    needs: recolor
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - run: python3 .github/scripts/banners.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit banners
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add art
+          git diff --cached --quiet || (git commit -m "Rebuild banners" && git pull --rebase origin main && git push)
