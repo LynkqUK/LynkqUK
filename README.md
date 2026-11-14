@@ -17,11 +17,19 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <br>
 
+<img src="art/marquee.svg" width="100%" alt="Ship it, read the error, commit often, break it, fix it, repeat">
+
+<br><br>
+
 <img src="art/about.svg" width="100%" alt="About: learning to build software">
 
 <br><br>
 
 <img src="art/now.svg" width="100%" alt="Now: learning c++ and python, building a first full project, reading other people's code">
+
+<br><br>
+
+<img src="art/code.svg" width="100%" alt="me.py: a short Python class describing me">
 
 <br><br>
 
@@ -38,6 +46,10 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 <br><br>
 
 <img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
+
+<br><br>
+
+<img src="art/knight.svg" width="100%" alt="A knight visiting every square of a chessboard once">
 
 <br><br>
 

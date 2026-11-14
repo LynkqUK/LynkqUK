@@ -185,5 +185,134 @@
         "patch pending"
       ]
     ]
+  },
+  "marquee": {
+    "top": "SHIP IT · READ THE ERROR · COMMIT OFTEN · BREAK IT, FIX IT · REPEAT",
+    "bottom": "PYTHON · C++ · GIT · LINUX · HTML · CSS · JAVASCRIPT · CHESS · GYM · MATH"
+  },
+  "code": {
+    "file": "me.py",
+    "lines": [
+      [
+        [
+          "class ",
+          "k"
+        ],
+        [
+          "Me:",
+          "n"
+        ]
+      ],
+      [
+        [
+          "    name   = ",
+          "n"
+        ],
+        [
+          "\"LynkqUK\"",
+          "s"
+        ]
+      ],
+      [
+        [
+          "    stack  = [",
+          "n"
+        ],
+        [
+          "\"python\", \"c++\", \"git\", \"linux\"",
+          "s"
+        ],
+        [
+          "]",
+          "n"
+        ]
+      ],
+      [
+        [
+          "    lifts  = ",
+          "n"
+        ],
+        [
+          "\"3-4x a week\"",
+          "s"
+        ]
+      ],
+      [
+        [
+          "    plays  = ",
+          "n"
+        ],
+        [
+          "\"chess, badly at 2 a.m.\"",
+          "s"
+        ]
+      ],
+      [
+        [
+          "    sleeps = ",
+          "n"
+        ],
+        [
+          "None  ",
+          "k"
+        ],
+        [
+          "# TODO",
+          "c"
+        ]
+      ],
+      [
+        [
+          " ",
+          "n"
+        ]
+      ],
+      [
+        [
+          "    def ",
+          "k"
+        ],
+        [
+          "today(self):",
+          "n"
+        ]
+      ],
+      [
+        [
+          "        while not ",
+          "k"
+        ],
+        [
+          "self.shipped:",
+          "n"
+        ]
+      ],
+      [
+        [
+          "            learn(); build(); fix()",
+          "n"
+        ]
+      ],
+      [
+        [
+          "        return ",
+          "k"
+        ],
+        [
+          "\"ship it\"",
+          "s"
+        ]
+      ]
+    ]
+  },
+  "knight": {
+    "title": "Knight's tour",
+    "sub1": "Every square. Once.",
+    "sub2": "No straight lines.",
+    "right": [
+      "64 squares",
+      "1 knight",
+      "0 repeats"
+    ]
   }
 }

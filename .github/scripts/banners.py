@@ -354,6 +354,137 @@ def sheet_banner(name, c, seed):
     frame(name, c["title"], c["sub"], c["pill"], levels, over=over, rnd=rnd)
 
 
+# ------------------------------------------------------------------ marquee (two scrolling bands)
+def marquee_strip(name, c):
+    h = 250
+    rows = [(c["top"], 88, 38, "fill", 1), (c["bottom"], 56, 30, "outline", -1)]
+    body, css = "", ""
+    y = 100
+    for idx, (phrase, fs, dur, mode, direction) in enumerate(rows):
+        unit = phrase + "   ·   "
+        pw = round(len(unit) * fs * 0.56)
+        while pw < W + 200:
+            unit += unit
+            pw = round(len(unit) * fs * 0.56)
+        attrs = f'fill="{TITLE}"' if mode == "fill" else f'fill="none" stroke="{RAMP[3]}" stroke-width="1.6"'
+        texts = "".join(
+            f'<text x="{k * pw}" y="{y}" font-family="Saira, system-ui, sans-serif" font-size="{fs}" font-weight="700" {attrs} '
+            f'textLength="{pw}" lengthAdjust="spacingAndGlyphs">{esc(unit)}</text>' for k in range(3)
+        )
+        a, b = (0, -pw) if direction > 0 else (-pw, 0)
+        css += f"@keyframes mq{idx}{{from{{transform:translateX({a}px)}}to{{transform:translateX({b}px)}}}}.mq{idx}{{animation:mq{idx} {dur}s linear infinite}}"
+        body += f'<g class="mq{idx}">{texts}</g>'
+        y += 112
+    fade = (
+        f'<defs><linearGradient id="fl" x1="0" x2="1"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{BG}" stop-opacity="0"/></linearGradient>'
+        f'<linearGradient id="fr" x1="1" x2="0"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{BG}" stop-opacity="0"/></linearGradient></defs>'
+        f'<rect width="220" height="{h}" fill="url(#fl)"/><rect x="{W - 220}" width="220" height="{h}" fill="url(#fr)"/>'
+    )
+    line = f'<rect x="72" y="{h - 8}" width="{W - 144}" height="2" fill="{PILL_STROKE}"/>'
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="{esc(c["top"])}">'
+        f'<title>{esc(c["top"])}</title><style>{STYLE}{css}</style><rect width="{W}" height="{h}" fill="{BG}"/>{body}{fade}{line}</svg>'
+    )
+    (OUT / name).write_text(svg)
+    print("wrote", name, len(svg) // 1024, "KB")
+
+
+# ------------------------------------------------------------------ code window (typed python)
+def code_banner(name, c):
+    pal = {"k": TITLE, "n": RAMP[3], "s": "#d0d7de", "c": RAMP[2]}
+    lines = c["lines"]
+    fs, lh = 30, 46
+    cw = fs * 0.6
+    x0, wx, wy, ww = 190, 110, 24, W - 220
+    top = wy + 64
+    h = int(top + len(lines) * lh + 60)
+    wh = h - wy - 24
+    clips, over = "", ""
+    cycle = 22
+    for i, segs in enumerate(lines):
+        y = top + 30 + i * lh
+        text = "".join(t for t, _ in segs)
+        n = max(1, len(text))
+        t0 = 0.5 + i * 0.85
+        vals = ";".join(f"{j * cw:.1f}" for j in range(n + 1))
+        kts = ";".join(f"{j / n:.4f}" for j in range(n + 1))
+        begins = ";".join(f"{t0 + k * cycle:.2f}s" for k in range(30))
+        clips += (
+            f'<clipPath id="c{i}"><rect x="{x0}" y="{y - 34}" width="0" height="{lh}">'
+            f'<animate attributeName="width" values="{vals}" keyTimes="{kts}" calcMode="discrete" dur="{n * 0.03:.2f}s" begin="{begins}" fill="freeze"/></rect></clipPath>'
+        )
+        tsp = "".join(f'<tspan fill="{pal[col]}">{esc(t)}</tspan>' for t, col in segs)
+        over += (f'<text x="{x0 - 40}" y="{y}" {FIRA} font-size="22" fill="{RAMP[2]}" text-anchor="end">{i + 1}</text>'
+                 f'<g clip-path="url(#c{i})"><text x="{x0}" y="{y}" {FIRA} font-size="{fs}" font-weight="500">{tsp}</text></g>')
+    li = len(lines) - 1
+    lx = x0 + len("".join(t for t, _ in lines[li])) * cw + 4
+    over += f'<rect class="bl" x="{lx:.0f}" y="{top + 30 + li * lh - 28}" width="{cw:.0f}" height="34" fill="{TITLE}"/>'
+    dots = "".join(f'<circle cx="{wx + 36 + k * 30}" cy="{wy + 32}" r="8" fill="{col}"/>' for k, col in enumerate([RAMP[2], RAMP[3], TITLE]))
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="me.py: a short python class describing me">'
+        f'<title>me.py</title><style>{STYLE}</style><defs>{clips}</defs><rect width="{W}" height="{h}" fill="{BG}"/>'
+        f'<rect x="{wx}" y="{wy}" width="{ww}" height="{wh}" rx="22" fill="{PILL_BG}" stroke="{PILL_STROKE}" stroke-width="2"/>'
+        f'<rect x="{wx}" y="{wy}" width="{ww}" height="64" rx="22" fill="#1b212a"/><rect x="{wx}" y="{wy + 40}" width="{ww}" height="24" fill="#1b212a"/>'
+        f'{dots}<text x="{W / 2}" y="{wy + 41}" text-anchor="middle" {FIRA} font-size="22" font-weight="500" fill="{SUB}">{esc(c["file"])}</text>{over}</svg>'
+    )
+    (OUT / name).write_text(svg)
+    print("wrote", name, len(svg) // 1024, "KB")
+
+
+# ------------------------------------------------------------------ knight's tour (animated chessboard)
+def knight_tour(name, c):
+    n, sq = 8, 46
+    moves = [(1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2)]
+    pos, seen, path = (0, 0), {(0, 0)}, [(0, 0)]
+
+    def nxt(p):
+        return [(p[0] + a, p[1] + b) for a, b in moves if 0 <= p[0] + a < n and 0 <= p[1] + b < n and (p[0] + a, p[1] + b) not in seen]
+
+    while len(path) < 64:
+        opts = nxt(pos)
+        if not opts:
+            raise SystemExit("tour failed")
+        pos = min(opts, key=lambda q: (len(nxt(q)), q))  # Warnsdorff
+        seen.add(pos)
+        path.append(pos)
+    h = 420
+    bx, by = (W - n * sq) / 2, (h - n * sq) / 2
+    T = 64 * 0.4
+    board = "".join(
+        f'<rect x="{bx + i * sq}" y="{by + j * sq}" width="{sq}" height="{sq}" fill="{RAMP[1] if (i + j) % 2 else RAMP[0]}"/>' for i in range(n) for j in range(n)
+    )
+    glow = ""
+    for k, p in enumerate(path):
+        t = k / 64
+        kt = [0, t, t + 0.0001, min(t + 0.06, 0.99), 0.995, 1.0]
+        for a in range(1, len(kt)):
+            kt[a] = max(kt[a], kt[a - 1] + 0.00001)
+        kt[-1] = 1.0
+        glow += (f'<rect x="{bx + p[0] * sq}" y="{by + p[1] * sq}" width="{sq}" height="{sq}" fill="{TITLE}" opacity="0">'
+                 f'<animate attributeName="opacity" values="0;0;1;.5;.5;0" keyTimes="{";".join(f"{v:.5f}" for v in kt)}" dur="{T}s" repeatCount="indefinite"/></rect>')
+    pts = [(bx + p[0] * sq + sq / 2, by + p[1] * sq + sq / 2) for p in path]
+    d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+    kp = ";".join(f"{i / 63:.5f}" for i in range(64))
+    anim = f'dur="{T}s" repeatCount="indefinite" path="{d}" keyPoints="{kp}" keyTimes="{kp}" calcMode="linear"'
+    dot = f'<g class="motion-only"><circle r="15" fill="#fff" opacity=".2"><animateMotion {anim}/></circle><circle r="7" fill="#fff"><animateMotion {anim}/></circle></g>'
+
+    def L(y, t, f, w, col):
+        return f'<text x="72" y="{y}" font-family="Saira, system-ui, sans-serif" font-size="{f}" font-weight="{w}" fill="{col}">{esc(t)}</text>'
+
+    left = L(170, c["title"], 76, 700, TITLE) + L(222, c["sub1"], 34, 400, SUB) + L(266, c["sub2"], 34, 400, SUB)
+    rx = bx + n * sq + 90
+    right = "".join(
+        f'<text x="{rx}" y="{150 + i * 56}" {FIRA} font-size="30" font-weight="500" fill="{TITLE if i == 0 else SUB}">&gt; {esc(t)}</text>' for i, t in enumerate(c["right"])
+    )
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="A knight visiting every square of a chessboard once">'
+        f'<title>Knight tour</title><style>{STYLE}</style><rect width="{W}" height="{h}" fill="{BG}"/>'
+        f'<rect x="{bx - 10}" y="{by - 10}" width="{n * sq + 20}" height="{n * sq + 20}" rx="14" fill="none" stroke="{PILL_STROKE}" stroke-width="2"/>{board}{glow}{dot}{left}{right}</svg>'
+    )
+    (OUT / name).write_text(svg)
+    print("wrote", name, len(svg) // 1024, "KB")
+
+
 # ------------------------------------------------------------------ the loop (animated)
 def loop_strip(name, c):
     steps = c["steps"][:6]
@@ -450,12 +581,15 @@ def footer_strip(name, c, seed):
 def main():
     OUT.mkdir(exist_ok=True)
     user = os.environ.get("GITHUB_REPOSITORY_OWNER") or CFG.get("user", "LynkqUK")
+    marquee_strip("marquee.svg", CFG["marquee"])
     word_banner("about.svg", CFG["about"], 21)
     lines_banner("now.svg", CFG["now"], 8)
+    code_banner("code.svg", CFG["code"])
     loop_strip("loop.svg", CFG["loop"])
     word_banner("stack.svg", CFG["stack"], 34)
     tools_strip("tools.svg", CFG["tools"])
     sheet_banner("sheet.svg", CFG["sheet"], 63)
+    knight_tour("knight.svg", CFG["knight"])
     projects_banner("projects.svg", CFG["projects"], user, 5)
     lines_banner("rules.svg", CFG["rules"], 17)
     lines_banner("goals.svg", CFG["goals"], 29)
