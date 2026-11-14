@@ -314,5 +314,34 @@
       "1 knight",
       "0 repeats"
     ]
+  },
+  "games": {
+    "title": "Games",
+    "sub": "Controller in hand.",
+    "pill": "player one",
+    "lines": [
+      [
+        "chess",
+        "blitz at 2 a.m."
+      ],
+      [
+        "minecraft",
+        "survival, obviously"
+      ],
+      [
+        "valorant",
+        "ranked, no regrets"
+      ],
+      [
+        "rocket league",
+        "aerial or nothing"
+      ]
+    ]
+  },
+  "numbers": {
+    "title": "Numbers",
+    "sub": "GitHub, auto-updated.",
+    "pill": "live data",
+    "word": "STATS"
   }
 }

@@ -51,6 +51,14 @@ jobs:
       - run: python3 .github/scripts/banners.py
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=%23f0f6fc&color_dots=%23151b23,%232d333b,%23545d68,%239198a1,%23f0f6fc&color_dot_border=%230d1117
+      - name: Place snake
+        run: cp dist/snake.svg art/snake.svg
       - name: Commit banners
         run: |
           git config user.name "github-actions[bot]"

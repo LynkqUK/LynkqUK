@@ -590,6 +590,8 @@ def main():
     tools_strip("tools.svg", CFG["tools"])
     sheet_banner("sheet.svg", CFG["sheet"], 63)
     knight_tour("knight.svg", CFG["knight"])
+    lines_banner("games.svg", CFG["games"], 77)
+    word_banner("numbers.svg", CFG["numbers"], 99)
     projects_banner("projects.svg", CFG["projects"], user, 5)
     lines_banner("rules.svg", CFG["rules"], 17)
     lines_banner("goals.svg", CFG["goals"], 29)
