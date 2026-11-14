@@ -7,11 +7,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/LynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/LynkqUK?style=for-the-badge&logo=github&logoColor=f20707&label=FOLLOWERS&color=151b23&labelColor=0d1117" alt="Followers"/></a>
-<a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=f20707&label=STARS&color=151b23&labelColor=0d1117" alt="Stars"/></a>
-<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=151b23&labelColor=0d1117" alt="Visitors"/>
+<a href="https://github.com/LynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/LynkqUK?style=for-the-badge&logo=github&logoColor=f5f5f5&label=FOLLOWERS&color=21262d&labelColor=0d1117" alt="Followers"/></a>
+<a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=f5f5f5&label=STARS&color=21262d&labelColor=0d1117" alt="Stars"/></a>
+<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=21262d&labelColor=0d1117" alt="Visitors"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-01.svg" width="100%" alt="01 WHOAMI"/>
 
@@ -19,7 +19,7 @@
 
 <img src="art/whoami.svg" width="100%" alt="Profile card: LynkqUK, aspiring software developer, online and building"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-02.svg" width="100%" alt="02 RIGHT NOW"/>
 
@@ -27,7 +27,7 @@
 
 <img src="art/now.svg" width="100%" alt="Building small projects, learning Python, C++ and the web, exploring how real software works"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-03.svg" width="100%" alt="03 PRINCIPLES"/>
 
@@ -35,7 +35,7 @@
 
 <img src="art/principles.svg" width="100%" alt="Systems, clean code, small loops, in public"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-04.svg" width="100%" alt="04 ARSENAL"/>
 
@@ -43,7 +43,7 @@
 
 <img src="art/arsenal.svg" width="100%" alt="Python, C++, HTML, CSS, JavaScript, Git, GitHub, VS Code, Windows, Linux"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-05.svg" width="100%" alt="05 GITHUB INTEL"/>
 
@@ -59,9 +59,9 @@
 
 <br/><br/>
 
-<img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=151b23&stroke=30363d&ring=f20707&fire=f20707&currStreakLabel=f20707&currStreakNum=f0f6fc&sideNums=f0f6fc&sideLabels=9198a1&dates=6e7681" alt="Streak"/>
+<img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=0d1117&stroke=2c313a&ring=f5f5f5&fire=f5f5f5&currStreakLabel=f5f5f5&currStreakNum=f5f5f5&sideNums=f5f5f5&sideLabels=8a8f98&dates=6e7681" alt="Streak"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-06.svg" width="100%" alt="06 SNAKE"/>
 
@@ -73,7 +73,7 @@
   <img width="100%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/output/github-snake-dark.svg" alt="Contribution snake"/>
 </picture>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-07.svg" width="100%" alt="07 ROADMAP"/>
 
@@ -81,7 +81,7 @@
 
 <img src="art/roadmap.svg" width="100%" alt="Roadmap: 2 of 8 goals complete"/>
 
-<br/><br/>
+<br/>
 
 <img src="art/sec-08.svg" width="100%" alt="08 TRANSMISSION"/>
 
