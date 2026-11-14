@@ -7,7 +7,7 @@
 
 <br/><br/>
 
-<img src="art/hero.svg" width="100%" alt="LynkqUK, aspiring software developer"/>
+<img src="art/rain.svg" width="100%" alt="LynkqUK spelled in a contribution grid while red pixels rain down"/>
 
 <br/><br/>
 
@@ -92,8 +92,14 @@
 <br/><br/>
 
 <a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" height="52" alt="Discord"/></a>
-&nbsp;
 <a href="https://github.com/LynkqUK"><img src="art/btn-github.svg" height="52" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="art/btn-linkedin.svg" height="52" alt="LinkedIn"/></a>
+<a href="https://x.com/YOUR_X_USERNAME"><img src="art/btn-x.svg" height="52" alt="X"/></a>
+
+<a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="art/btn-instagram.svg" height="52" alt="Instagram"/></a>
+<a href="https://www.tiktok.com/@YOUR_TIKTOK"><img src="art/btn-tiktok.svg" height="52" alt="TikTok"/></a>
+<a href="https://www.youtube.com/@YOUR_YOUTUBE"><img src="art/btn-youtube.svg" height="52" alt="YouTube"/></a>
+<a href="mailto:YOUR_EMAIL@example.com"><img src="art/btn-email.svg" height="52" alt="Email"/></a>
 
 <br/>
 
