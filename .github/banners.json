@@ -153,5 +153,37 @@
         "english, french, arabic"
       ]
     ]
+  },
+  "sheet": {
+    "title": "Stats",
+    "sub": "Character sheet.",
+    "pill": "lvl: in progress",
+    "stats": [
+      [
+        "logic",
+        10,
+        "olympiad brain"
+      ],
+      [
+        "focus",
+        8,
+        "deep work only"
+      ],
+      [
+        "discipline",
+        9,
+        "systems > mood"
+      ],
+      [
+        "strength",
+        7,
+        "3-4x a week"
+      ],
+      [
+        "sleep",
+        3,
+        "patch pending"
+      ]
+    ]
   }
 }

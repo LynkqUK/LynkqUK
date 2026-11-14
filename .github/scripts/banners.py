@@ -324,6 +324,36 @@ def tools_strip(name, tools):
     print("wrote", name, len(svg) // 1024, "KB")
 
 
+# ------------------------------------------------------------------ character sheet (bars light up cell by cell)
+def sheet_banner(name, c, seed):
+    rnd = random.Random(seed)
+    levels = noise(rnd)
+    for lv in range(1, 5):
+        levels[lv] = [q for q in levels[lv] if not (Y0 + 1 * PITCH <= q[1] <= Y0 + 11 * PITCH and q[0] < X0 + 30 * PITCH)]
+    for r in range(1, 12):
+        for col in range(30):
+            levels[0].append((X0 + col * PITCH, Y0 + r * PITCH))
+    stats = c["stats"][:5]
+    ncell = 12
+    bx_col = 7
+    over = ""
+    for i, (label, val, note) in enumerate(stats):
+        row = 1 + i * 2 + (1 if len(stats) <= 4 else 0) if len(stats) > 4 else 2 + i * 2
+        y = Y0 + row * PITCH
+        over += f'<text x="{X0 + 10}" y="{y + 15}" {FIRA} font-size="22" font-weight="500" fill="{TITLE}">{esc(label)}</text>'
+        for k in range(ncell):
+            x = X0 + (bx_col + k) * PITCH
+            on = k < val
+            fill = TITLE if on else RAMP[1]
+            if on:
+                over += (f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="4" fill="{fill}" opacity="0"><animate attributeName="opacity" '
+                         f'from="0" to="1" begin="{0.4 + i * 0.5 + k * 0.09:.2f}s" dur="0.15s" fill="freeze"/></rect>')
+            else:
+                over += f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="4" fill="{fill}"/>'
+        over += f'<text x="{X0 + (bx_col + ncell) * PITCH + 6}" y="{y + 15}" {FIRA} font-size="20" font-weight="500" fill="{SUB}">{esc(note)}</text>'
+    frame(name, c["title"], c["sub"], c["pill"], levels, over=over, rnd=rnd)
+
+
 # ------------------------------------------------------------------ the loop (animated)
 def loop_strip(name, c):
     steps = c["steps"][:6]
@@ -425,6 +455,7 @@ def main():
     loop_strip("loop.svg", CFG["loop"])
     word_banner("stack.svg", CFG["stack"], 34)
     tools_strip("tools.svg", CFG["tools"])
+    sheet_banner("sheet.svg", CFG["sheet"], 63)
     projects_banner("projects.svg", CFG["projects"], user, 5)
     lines_banner("rules.svg", CFG["rules"], 17)
     lines_banner("goals.svg", CFG["goals"], 29)
