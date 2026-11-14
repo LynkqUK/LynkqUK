@@ -396,5 +396,49 @@
     "label": "email",
     "value": "lynkqbusiness.gg@gmail.com",
     "fs": 29
+  },
+  "lift": {
+    "title": "Lift",
+    "sub": "3-4 days a week."
+  },
+  "sound": {
+    "title": "Sound",
+    "sub": "Headphones on, world off.",
+    "pill": "deep work mode"
+  },
+  "quests": {
+    "title": "Quests",
+    "sub": "Currently in progress.",
+    "quests": [
+      [
+        "ship a first full project",
+        60
+      ],
+      [
+        "get comfortable with c++",
+        35
+      ],
+      [
+        "first open-source pull request",
+        10
+      ],
+      [
+        "build something people use",
+        5
+      ]
+    ]
+  },
+  "focus": {
+    "title": "Focus",
+    "sub": "One thing at a time.",
+    "pill": "25 / 5",
+    "inside": "deep work",
+    "inside2": "no phone",
+    "seconds": 25,
+    "right": [
+      "25 min on",
+      "5 min off",
+      "repeat"
+    ]
   }
 }

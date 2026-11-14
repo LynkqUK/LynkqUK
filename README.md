@@ -57,11 +57,19 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <br><br>
 
+<img src="art/lift.svg" width="100%" alt="Lift: an animated barbell doing five reps">
+
+<br><br>
+
 <img src="art/knight.svg" width="100%" alt="A knight visiting every square of a chessboard once">
 
 <br><br>
 
 <img src="art/games.svg" width="100%" alt="Games: chess, minecraft, valorant, rocket league">
+
+<br><br>
+
+<img src="art/sound.svg" width="100%" alt="Sound: an audio equalizer, headphones on, world off">
 
 <br><br>
 
@@ -74,6 +82,10 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 <br><br>
 
 <img src="art/goals.svg" width="100%" alt="Goals: where I am heading">
+
+<br><br>
+
+<img src="art/quests.svg" width="100%" alt="Quests in progress: first project 60 percent, c++ 35 percent">
 
 <br><br>
 
@@ -90,6 +102,10 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 <details><summary><b>Sleep?</b></summary><br>A feature I keep meaning to enable.<br><br></details>
 
 <br>
+
+<img src="art/focus.svg" width="100%" alt="Focus: a 25 minute timer ring">
+
+<br><br>
 
 <img src="art/numbers.svg" width="100%" alt="Numbers: GitHub stats, auto-updated">
 
@@ -137,14 +153,3 @@ No images are uploaded by hand, nothing is hosted elsewhere.</sub>
 </details>
 
 </div>
-
-<!--
-More links, when you are ready: fill in your handles and remove the comment markers around this block.
-
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-21262d?style=flat-square" alt="LinkedIn"></a>
-<a href="https://x.com/YOUR_X_USERNAME"><img src="https://img.shields.io/badge/X-21262d?style=flat-square&logo=x&logoColor=f0f6fc" alt="X"></a>
-<a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="https://img.shields.io/badge/Instagram-21262d?style=flat-square&logo=instagram&logoColor=f0f6fc" alt="Instagram"></a>
-<a href="https://www.tiktok.com/@YOUR_TIKTOK"><img src="https://img.shields.io/badge/TikTok-21262d?style=flat-square&logo=tiktok&logoColor=f0f6fc" alt="TikTok"></a>
-<a href="https://www.youtube.com/@YOUR_YOUTUBE"><img src="https://img.shields.io/badge/YouTube-21262d?style=flat-square&logo=youtube&logoColor=f0f6fc" alt="YouTube"></a>
-<a href="mailto:YOUR_EMAIL@example.com"><img src="https://img.shields.io/badge/Email-21262d?style=flat-square&logo=gmail&logoColor=f0f6fc" alt="Email"></a>
--->

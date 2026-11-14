@@ -4,7 +4,7 @@
 Edit the text in .github/banners.json, commit, and the workflow rebuilds everything.
 The Activity banner is drawn from your real GitHub contribution calendar.
 """
-import datetime
+import math, datetime
 import json
 import os
 import pathlib
@@ -507,6 +507,103 @@ def button_banner(name, c):
     print("wrote", name, len(svg) // 1024, "KB")
 
 
+# ------------------------------------------------------------------ quests (progress bars that fill)
+def quests_banner(name, c):
+    h = 380
+    x1, bw = 560, 860
+    cyc = 18
+    out = f'<text x="72" y="70" font-family="Saira, system-ui, sans-serif" font-size="46" font-weight="700" fill="{TITLE}">{esc(c["title"])}</text>'
+    out += f'<text x="72" y="108" font-family="Saira, system-ui, sans-serif" font-size="26" fill="{SUB}">{esc(c["sub"])}</text>'
+    for i, (label, pct) in enumerate(c["quests"][:4]):
+        y = 160 + i * 52
+        begins = ";".join(f"{0.4 + i * 0.4 + k * cyc:.2f}s" for k in range(40))
+        out += (
+            f'<text x="72" y="{y + 8}" {FIRA} font-size="26" font-weight="500" fill="{TITLE}">{esc(label)}</text>'
+            f'<rect x="{x1}" y="{y - 14}" width="{bw}" height="26" rx="13" fill="{RAMP[1]}"/>'
+            f'<rect x="{x1}" y="{y - 14}" width="0" height="26" rx="13" fill="{TITLE}"><animate attributeName="width" values="0;{bw * pct / 100:.0f}" dur="1.6s" begin="{begins}" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>'
+            f'<text x="{x1 + bw + 24}" y="{y + 8}" {FIRA} font-size="26" font-weight="500" fill="{SUB}">{pct}%</text>'
+        )
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="Quests in progress"><title>Quests</title>'
+           f'<style>{STYLE}</style><rect width="{W}" height="{h}" fill="{BG}"/>{out}</svg>')
+    (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
+
+
+# ------------------------------------------------------------------ barbell (rep counter)
+def lift_banner(name, c):
+    h = 380
+    cx, fy = 1030, 330
+    dur, reps = 2.6, 5
+    plates = [(34, 190), (28, 160), (22, 125), (16, 90)]
+    g = f'<rect x="{cx - 470}" y="{-4}" width="940" height="8" rx="4" fill="{RAMP[3]}"/>'
+    for sgn in (-1, 1):
+        x = cx + sgn * 150
+        for wdt, ht in plates:
+            xx = x if sgn > 0 else x - wdt
+            g += f'<rect x="{xx}" y="{-ht / 2}" width="{wdt}" height="{ht}" rx="6" fill="{TITLE if wdt == 34 else RAMP[3] if wdt == 28 else RAMP[2] if wdt == 22 else RAMP[1]}" stroke="{BG}" stroke-width="2"/>'
+            x += sgn * (wdt + 3)
+        g += f'<rect x="{cx + sgn * 118 - 6}" y="-12" width="12" height="24" rx="3" fill="{RAMP[2]}"/>'
+    rise = 70
+    ease = 'calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"'
+    bar = (f'<g><animateTransform attributeName="transform" type="translate" values="0 {fy - 100};0 {fy - 100 - rise};0 {fy - 100}" dur="{dur}s" repeatCount="indefinite" {ease}/>{g}</g>')
+    floor = f'<rect x="{cx - 560}" y="{fy + 20}" width="1120" height="3" fill="{PILL_STROKE}"/>'
+    shadow = (f'<ellipse cx="{cx}" cy="{fy + 12}" rx="420" ry="8" fill="#000" opacity=".35"><animate attributeName="rx" values="420;330;420" dur="{dur}s" repeatCount="indefinite" {ease}/></ellipse>')
+    counts = ""
+    for r in range(reps):
+        a, b = r / reps, (r + 1) / reps
+        counts += (f'<text x="72" y="300" {FIRA} font-size="60" font-weight="500" fill="{TITLE}" opacity="0">rep {r + 1}/{reps}'
+                   f'<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;{a + 0.001:.4f};{b - 0.001:.4f};{b:.4f};1" calcMode="discrete" dur="{dur * reps}s" repeatCount="indefinite"/></text>')
+    title = (f'<text x="72" y="130" font-family="Saira, system-ui, sans-serif" font-size="96" font-weight="700" fill="{TITLE}">{esc(c["title"])}</text>'
+             f'<text x="72" y="190" font-family="Saira, system-ui, sans-serif" font-size="38" fill="{SUB}">{esc(c["sub"])}</text>')
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="An animated barbell doing reps"><title>Lift</title>'
+           f'<style>{STYLE}</style><rect width="{W}" height="{h}" fill="{BG}"/>{floor}{shadow}{bar}{title}{counts}</svg>')
+    (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
+
+
+# ------------------------------------------------------------------ focus ring (pomodoro)
+def focus_banner(name, c):
+    import math
+    h = 380
+    cx, cy, r = 900, 190, 118
+    circ = 2 * math.pi * r
+    t = c.get("seconds", 25)
+    ring = (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RAMP[1]}" stroke-width="18"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{TITLE}" stroke-width="18" stroke-linecap="round" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ:.1f}" transform="rotate(-90 {cx} {cy})">'
+            f'<animate attributeName="stroke-dashoffset" values="{circ:.1f};0;0;{circ:.1f}" keyTimes="0;.82;.94;1" dur="{t}s" repeatCount="indefinite"/></circle>'
+            f'<g class="motion-only"><g><animateTransform attributeName="transform" type="rotate" values="-90 {cx} {cy};270 {cx} {cy}" dur="{t * .82:.1f}s" repeatCount="indefinite"/>'
+            f'<circle cx="{cx + r}" cy="{cy}" r="7" fill="#fff"/></g></g>')
+    inner = (f'<text x="{cx}" y="{cy + 4}" text-anchor="middle" {FIRA} font-size="30" font-weight="500" fill="{TITLE}">{esc(c["inside"])}</text>'
+             f'<text x="{cx}" y="{cy + 44}" text-anchor="middle" {FIRA} font-size="22" font-weight="500" fill="{SUB}">{esc(c["inside2"])}</text>')
+    title = (f'<text x="72" y="130" font-family="Saira, system-ui, sans-serif" font-size="96" font-weight="700" fill="{TITLE}">{esc(c["title"])}</text>'
+             f'<text x="72" y="190" font-family="Saira, system-ui, sans-serif" font-size="38" fill="{SUB}">{esc(c["sub"])}</text>')
+    right = "".join(f'<text x="{cx + r + 110}" y="{150 + i * 56}" {FIRA} font-size="30" font-weight="500" fill="{TITLE if i == 0 else SUB}">&gt; {esc(x)}</text>' for i, x in enumerate(c["right"]))
+    pill = f'<rect x="72" y="259" width="{18 * len(c["pill"]) + 38}" height="53" rx="26.5" fill="{PILL_BG}" stroke="{PILL_STROKE}" stroke-width="2"/><text x="91" y="296.5" {FIRA} font-size="30" font-weight="500" fill="{TITLE}">{esc(c["pill"])}</text>'
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="A focus timer ring filling up"><title>Focus</title>'
+           f'<style>{STYLE}</style><rect width="{W}" height="{h}" fill="{BG}"/>{title}{pill}{ring}{inner}{right}</svg>')
+    (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
+
+
+# ------------------------------------------------------------------ equalizer
+def eq_banner(name, c):
+    rnd = random.Random(7)
+    h = 300
+    n, bw, gap = 34, 16, 12
+    x0 = W - 72 - n * (bw + gap)
+    css, bars = "", ""
+    for i in range(n):
+        env = 0.35 + 0.65 * math.sin(math.pi * (i + 1) / (n + 1)) ** 1.2
+        mx = int(200 * env * (0.55 + 0.45 * rnd.random()))
+        d = 0.7 + rnd.random() * 1.1
+        delay = -rnd.random() * 2
+        bars += f'<rect class="eb" x="{x0 + i * (bw + gap)}" y="250" width="{bw}" height="{mx}" rx="4" fill="{TITLE if i % 7 == 3 else RAMP[3] if i % 3 else RAMP[2]}" style="animation-duration:{d:.2f}s;animation-delay:{delay:.2f}s"/>'
+    css = ".eb{transform-box:fill-box;transform-origin:50% 100%;transform:translateY(-100%);animation:eqb ease-in-out infinite alternate}@keyframes eqb{from{transform:translateY(-100%) scaleY(.12)}to{transform:translateY(-100%) scaleY(1)}}"
+    title = (f'<text x="72" y="130" font-family="Saira, system-ui, sans-serif" font-size="96" font-weight="700" fill="{TITLE}">{esc(c["title"])}</text>'
+             f'<text x="72" y="190" font-family="Saira, system-ui, sans-serif" font-size="38" fill="{SUB}">{esc(c["sub"])}</text>'
+             f'<rect x="72" y="219" width="{18 * len(c["pill"]) + 38}" height="53" rx="26.5" fill="{PILL_BG}" stroke="{PILL_STROKE}" stroke-width="2"/><text x="91" y="256.5" {FIRA} font-size="30" font-weight="500" fill="{TITLE}">{esc(c["pill"])}</text>')
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="An audio equalizer"><title>Sound</title>'
+           f'<style>{STYLE}{css}</style><rect width="{W}" height="{h}" fill="{BG}"/>{title}{bars}</svg>')
+    (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
+
+
 # ------------------------------------------------------------------ the loop (animated)
 def loop_strip(name, c):
     steps = c["steps"][:6]
@@ -606,6 +703,10 @@ def main():
     marquee_strip("marquee.svg", CFG["marquee"])
     word_banner("about.svg", CFG["about"], 21)
     lines_banner("now.svg", CFG["now"], 8)
+    lift_banner("lift.svg", CFG["lift"])
+    eq_banner("sound.svg", CFG["sound"])
+    quests_banner("quests.svg", CFG["quests"])
+    focus_banner("focus.svg", CFG["focus"])
     code_banner("code.svg", CFG["code"])
     loop_strip("loop.svg", CFG["loop"])
     word_banner("stack.svg", CFG["stack"], 34)
