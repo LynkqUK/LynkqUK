@@ -1,16 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 190" width="880" height="190" role="img" aria-label="Heartbeat footer for LynkqUK">
-<defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#8B2635" stop-opacity="0.25"/></linearGradient></defs>
-<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
-.beat{stroke-dasharray:22 78;animation:beat 3.4s linear infinite}
-@keyframes beat{from{stroke-dashoffset:100}to{stroke-dashoffset:-22}}
-.tx{animation:tx 3s ease-in-out infinite}
-@keyframes tx{0%,100%{opacity:.6}50%{opacity:1}}
-</style>
-
-<rect width="880" height="190" fill="url(#fg)"/>
-<path d="M0 104 H250 L270 104 L286 62 L306 140 L326 38 L346 104 H520 L540 104 L556 78 L572 118 L588 104 H880" fill="none" stroke="#46151C" stroke-width="2"/>
-<path class="beat" pathLength="100" d="M0 104 H250 L270 104 L286 62 L306 140 L326 38 L346 104 H520 L540 104 L556 78 L572 118 L588 104 H880" fill="none" stroke="#E03A4E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<text class="tx" x="442.0" y="42" text-anchor="middle" font-size="13" letter-spacing="6" fill="#C9C9C9">BUILT WITH INTENTION. DRIVEN BY CURIOSITY.</text>
-<text x="442.0" y="164" text-anchor="middle" font-size="12" letter-spacing="6" fill="#6B6B6B">LYNKQUK &#183; 2026</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 210" width="880" height="210" role="img" aria-label="Built with intention, driven by curiosity">
+<defs><filter id="fb" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="24"/></filter></defs>
+<style>text{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}.fa{animation:fa 16s ease-in-out infinite alternate}@keyframes fa{from{transform:translateX(-70px)}to{transform:translateX(70px)}}.fc{animation:fc 22s ease-in-out infinite alternate}@keyframes fc{from{transform:translateX(60px)}to{transform:translateX(-60px)}}.beat{stroke-dasharray:22 78;animation:beat 3.4s linear infinite}@keyframes beat{from{stroke-dashoffset:100}to{stroke-dashoffset:-22}}.tx{animation:tx 3s ease-in-out infinite}@keyframes tx{0%,100%{opacity:.65}50%{opacity:1}}</style>
+<rect width="880" height="210" fill="none"/><g filter="url(#fb)"><ellipse class="fa" cx="220.0" cy="168.20000000000002" rx="264.0" ry="64.60000000000001" fill="#8b949e" opacity="0.121"/><ellipse class="fc" cx="633.6" cy="77.0" rx="281.6" ry="76.0" fill="#8b949e" opacity="0.088"/></g><path d="M0 112 H250 L270 112 L286 70 L306 148 L326 46 L346 112 H520 L540 112 L556 86 L572 126 L588 112 H880" fill="none" stroke="#30363d" stroke-width="2"/><path class="beat" pathLength="100" d="M0 112 H250 L270 112 L286 70 L306 148 L326 46 L346 112 H520 L540 112 L556 86 L572 126 L588 112 H880" fill="none" stroke="#f20707" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text class="tx" x="442.0" y="48" text-anchor="middle" font-size="16" letter-spacing="5" fill="#c9d1d9">BUILT WITH INTENTION.</text><text class="tx" x="442.0" y="76" text-anchor="middle" font-size="16" letter-spacing="5" fill="#9198a1">DRIVEN BY CURIOSITY.</text><text x="442.0" y="182" text-anchor="middle" font-size="14" letter-spacing="6" fill="#6e7681">LYNKQUK &#183; 2026</text>
 </svg>

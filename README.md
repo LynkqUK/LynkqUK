@@ -7,13 +7,9 @@
 
 <br/><br/>
 
-<img src="art/rain.svg" width="100%" alt="LynkqUK spelled in a contribution grid while red pixels rain down"/>
-
-<br/><br/>
-
-<a href="https://github.com/LynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/LynkqUK?style=for-the-badge&logo=github&logoColor=E03A4E&label=FOLLOWERS&color=1a0a0d&labelColor=0b0b0b" alt="Followers"/></a>
-<a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=E03A4E&label=STARS&color=1a0a0d&labelColor=0b0b0b" alt="Stars"/></a>
-<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=1a0a0d&labelColor=0b0b0b" alt="Visitors"/>
+<a href="https://github.com/LynkqUK?tab=followers"><img src="https://img.shields.io/github/followers/LynkqUK?style=for-the-badge&logo=github&logoColor=f20707&label=FOLLOWERS&color=151b23&labelColor=0d1117" alt="Followers"/></a>
+<a href="https://github.com/LynkqUK?tab=repositories"><img src="https://img.shields.io/github/stars/LynkqUK?style=for-the-badge&logo=github&logoColor=f20707&label=STARS&color=151b23&labelColor=0d1117" alt="Stars"/></a>
+<img src="https://komarev.com/ghpvc/?username=LynkqUK&style=for-the-badge&label=VISITORS&color=151b23&labelColor=0d1117" alt="Visitors"/>
 
 <br/><br/>
 
@@ -53,17 +49,17 @@
 
 <br/><br/>
 
-<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats"/>
-<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/lynkquk/3-stats.svg" alt="Stats"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/lynkquk/2-most-commit-language.svg" alt="Top languages"/>
 
 <br/><br/>
 
-<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/4-productive-time.svg" alt="Productive time"/>
-<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos per language"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/lynkquk/4-productive-time.svg" alt="Productive time"/>
+<img width="49%" src="https://raw.githubusercontent.com/LynkqUK/LynkqUK/main/profile-summary-card-output/lynkquk/1-repos-per-language.svg" alt="Repos per language"/>
 
 <br/><br/>
 
-<img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=0b0b0b&ring=E03A4E&fire=E03A4E&currStreakLabel=E03A4E&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9C9C9&dates=777777" alt="Streak"/>
+<img width="80%" src="https://streak-stats.demolab.com?user=LynkqUK&hide_border=true&background=151b23&stroke=30363d&ring=f20707&fire=f20707&currStreakLabel=f20707&currStreakNum=f0f6fc&sideNums=f0f6fc&sideLabels=9198a1&dates=6e7681" alt="Streak"/>
 
 <br/><br/>
 
@@ -91,15 +87,16 @@
 
 <br/><br/>
 
-<a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" height="52" alt="Discord"/></a>
-<a href="https://github.com/LynkqUK"><img src="art/btn-github.svg" height="52" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="art/btn-linkedin.svg" height="52" alt="LinkedIn"/></a>
-<a href="https://x.com/YOUR_X_USERNAME"><img src="art/btn-x.svg" height="52" alt="X"/></a>
+<a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" height="40" alt="Discord"/></a>
+<a href="https://github.com/LynkqUK"><img src="art/btn-github.svg" height="40" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="art/btn-linkedin.svg" height="40" alt="LinkedIn"/></a>
 
-<a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="art/btn-instagram.svg" height="52" alt="Instagram"/></a>
-<a href="https://www.tiktok.com/@YOUR_TIKTOK"><img src="art/btn-tiktok.svg" height="52" alt="TikTok"/></a>
-<a href="https://www.youtube.com/@YOUR_YOUTUBE"><img src="art/btn-youtube.svg" height="52" alt="YouTube"/></a>
-<a href="mailto:YOUR_EMAIL@example.com"><img src="art/btn-email.svg" height="52" alt="Email"/></a>
+<a href="https://x.com/YOUR_X_USERNAME"><img src="art/btn-x.svg" height="40" alt="X"/></a>
+<a href="https://www.instagram.com/YOUR_INSTAGRAM"><img src="art/btn-instagram.svg" height="40" alt="Instagram"/></a>
+<a href="https://www.tiktok.com/@YOUR_TIKTOK"><img src="art/btn-tiktok.svg" height="40" alt="TikTok"/></a>
+
+<a href="https://www.youtube.com/@YOUR_YOUTUBE"><img src="art/btn-youtube.svg" height="40" alt="YouTube"/></a>
+<a href="mailto:YOUR_EMAIL@example.com"><img src="art/btn-email.svg" height="40" alt="Email"/></a>
 
 <br/>
 
