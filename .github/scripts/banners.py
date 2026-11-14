@@ -64,6 +64,7 @@ def style():
         ".tw{animation:tw 4s ease-in-out infinite}@keyframes tw{0%,100%{opacity:.04}50%{opacity:1}}"
         ".bl{animation:bl 1.05s steps(1) infinite}@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}"
         ".pu{animation:pu 3.2s ease-in-out infinite}@keyframes pu{0%,100%{opacity:.25}50%{opacity:1}}"
+        ".lp{animation:lp 8s linear infinite}@keyframes lp{0%{opacity:.25}6%{opacity:1}26%{opacity:.25}100%{opacity:.25}}"
         ".repaint{animation:repaint .25s steps(2) 12}@keyframes repaint{50%{opacity:.004}}"
         "@media (prefers-reduced-motion:reduce){*{animation:none!important}.motion-only{display:none}}"
     )
@@ -163,12 +164,10 @@ def word_banner(name, c, seed):
     frame(name, c["title"], c["sub"], c["pill"], levels, rnd=rnd)
 
 
-# ------------------------------------------------------------------ now banner (typed lines)
-def now_banner(name, c, seed):
+# ------------------------------------------------------------------ typed-lines banner
+def lines_banner(name, c, seed, lines=None, pill=None):
     rnd = random.Random(seed)
-    zone = lambda col, row: 3 <= row <= 9
-    levels = noise(rnd, clear=lambda col, row: False)
-    # fully quiet band behind the text
+    levels = noise(rnd)
     for lv in range(1, 5):
         levels[lv] = [p for p in levels[lv] if not (Y0 + 3 * PITCH <= p[1] <= Y0 + 9 * PITCH)]
     for r in range(3, 10):
@@ -176,33 +175,57 @@ def now_banner(name, c, seed):
             if col >= 25 and r >= 11:
                 continue
             levels[0].append((X0 + col * PITCH, Y0 + r * PITCH))
-    lines = c["lines"][:4]
+    lines = [tuple(x) for x in (lines if lines is not None else c["lines"])][:5]
+    n_l = len(lines)
+    fs = 34 if n_l <= 3 else 30 if n_l == 4 else 27
+    step = 66 if n_l <= 3 else 52 if n_l == 4 else 44
+    cw = fs * 0.6
     kw = max(len(k) for k, _ in lines)
-    fs, cw = 34, 34 * 0.6
-    step = 66
-    base0 = 190 - (len(lines) - 1) * step / 2 + 12
+    maxn = int(980 / cw)
+    base0 = 190 - (n_l - 1) * step / 2 + fs * 0.35
     clips, over = "", ""
-    last_end = 0
+    last_end, last_y = X0 + 20, base0
     for i, (k, v) in enumerate(lines):
         y = base0 + i * step
-        text = f"> {k.ljust(kw)}  {v}"
+        text = f"> {k.ljust(kw)}  {v}"[:maxn]
         n = len(text)
-        tw = n * cw + 8
-        t0 = 0.5 + i * 1.7
+        t0 = 0.5 + i * 1.6
         vals = ";".join(f"{j * cw:.1f}" for j in range(n + 1))
         kts = ";".join(f"{j / n:.4f}" for j in range(n + 1))
         clips += (
-            f'<clipPath id="ln{i}"><rect x="{X0 + 20}" y="{y - 36:.1f}" width="0" height="52">'
+            f'<clipPath id="ln{i}"><rect x="{X0 + 20}" y="{y - fs * 1.05:.1f}" width="0" height="{fs * 1.5:.1f}">'
             f'<animate attributeName="width" values="{vals}" keyTimes="{kts}" calcMode="discrete" dur="{n * 0.035:.2f}s" begin="{t0:.2f}s" fill="freeze"/></rect></clipPath>'
         )
+        key_part = text[2:2 + kw]
+        val_part = text[2 + kw:]
         over += (
             f'<g clip-path="url(#ln{i})"><text x="{X0 + 20}" y="{y:.1f}" {FIRA} font-size="{fs}" font-weight="500">'
-            f'<tspan fill="{RAMP[3]}">&gt; </tspan><tspan fill="{TITLE}">{esc(k.ljust(kw))}</tspan><tspan fill="{RAMP[3]}">  {esc(v)}</tspan></text></g>'
+            f'<tspan fill="{RAMP[3]}">&gt; </tspan><tspan fill="{TITLE}">{esc(key_part)}</tspan><tspan fill="{RAMP[3]}">{esc(val_part)}</tspan></text></g>'
         )
-        last_end = X0 + 20 + n * cw + 6
-        last_y = y
-    over += f'<rect class="bl" x="{last_end:.0f}" y="{last_y - 30:.0f}" width="16" height="36" fill="{TITLE}"/>'
-    frame(name, c["title"], c["sub"], c["pill"], levels, over=over, extra_defs=clips, rnd=rnd)
+        last_end, last_y = X0 + 20 + n * cw + 6, y
+    over += f'<rect class="bl" x="{last_end:.0f}" y="{last_y - fs * 0.85:.0f}" width="{fs * 0.5:.0f}" height="{fs * 1.05:.0f}" fill="{TITLE}"/>'
+    frame(name, c["title"], c["sub"], pill or c["pill"], levels, over=over, extra_defs=clips, rnd=rnd)
+
+
+# ------------------------------------------------------------------ projects banner (live from your repos)
+def projects_banner(name, c, user, seed):
+    lines, count = [], None
+    try:
+        r = subprocess.run(["gh", "api", f"users/{user}/repos?per_page=30&sort=pushed"], capture_output=True, text=True, timeout=60)
+        if r.returncode != 0:
+            raise RuntimeError(r.stderr.strip()[:200])
+        repos = [x for x in json.loads(r.stdout) if not x["fork"] and not x["archived"] and x["name"].lower() != user.lower()]
+        count = len(repos)
+        for x in repos[:5]:
+            lines.append((x["name"], x.get("description") or x.get("language") or "no description yet"))
+    except Exception as e:
+        print("projects: could not fetch repos:", e)
+        if (OUT / name).exists():
+            return
+    if not lines:
+        lines = [tuple(x) for x in c["empty"]]
+    pill = f"{count} public repos" if count else "coming soon"
+    lines_banner(name, c, seed, lines=lines, pill=pill)
 
 
 # ------------------------------------------------------------------ activity banner (real data)
@@ -301,6 +324,55 @@ def tools_strip(name, tools):
     print("wrote", name, len(svg) // 1024, "KB")
 
 
+# ------------------------------------------------------------------ the loop (animated)
+def loop_strip(name, c):
+    steps = c["steps"][:6]
+    caption = c.get("caption", "")
+    fs, ph, gap, h = 44, 84, 74, 250
+    cw = fs * 0.6
+    widths = [len(t) * cw + 40 + 46 for t in steps]
+    total = sum(widths) + gap * (len(steps) - 1)
+    x, y = (W - total) / 2, 44
+    yc = y + ph / 2
+    pills, conn, centers = "", "", []
+    n = len(steps)
+    for i, (t, wd) in enumerate(zip(steps, widths)):
+        delay = i * 8 / max(1, n - 1) - 0.5
+        pills += (
+            f'<rect x="{x:.1f}" y="{y}" width="{wd:.1f}" height="{ph}" rx="{ph / 2}" fill="{PILL_BG}" stroke="{PILL_STROKE}" stroke-width="2"/>'
+            f'<circle class="lp" cx="{x + 38:.1f}" cy="{yc}" r="8" fill="{TITLE}" style="animation-delay:{delay:.2f}s"/>'
+            f'<text x="{x + 64:.1f}" y="{yc + 15}" {FIRA} font-size="{fs}" font-weight="500" fill="{TITLE}">{esc(t)}</text>'
+        )
+        centers.append(x + 38)
+        if i < n - 1:
+            x1, x2 = x + wd + 10, x + wd + gap - 10
+            conn += (
+                f'<line x1="{x1:.1f}" y1="{yc}" x2="{x2 - 8:.1f}" y2="{yc}" stroke="{RAMP[2]}" stroke-width="3"/>'
+                f'<path d="M{x2 - 12:.1f} {yc - 9}L{x2:.1f} {yc}L{x2 - 12:.1f} {yc + 9}" fill="none" stroke="{RAMP[2]}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+            )
+        x += wd + gap
+    d = f"M{centers[0]:.1f} {yc}" + "".join(f" L{cx:.1f} {yc}" for cx in centers[1:])
+    seg = [centers[i + 1] - centers[i] for i in range(n - 1)]
+    tot = sum(seg)
+    cum = [0.0]
+    for sg in seg:
+        cum.append(cum[-1] + sg / tot)
+    kp = ";".join(f"{v:.4f}" for v in cum)
+    kt = ";".join(f"{i / (n - 1):.4f}" for i in range(n))
+    dot = (
+        f'<g class="motion-only"><circle r="13" fill="#ffffff" opacity="0.18"><animateMotion dur="8s" repeatCount="indefinite" path="{d}" keyPoints="{kp}" keyTimes="{kt}" calcMode="linear"/></circle>'
+        f'<circle r="6" fill="#ffffff"><animateMotion dur="8s" repeatCount="indefinite" path="{d}" keyPoints="{kp}" keyTimes="{kt}" calcMode="linear"/></circle></g>'
+    )
+    cap = f'<text x="{W / 2}" y="{h - 34}" text-anchor="middle" {FIRA} font-size="26" font-weight="500" fill="{SUB}" letter-spacing="4">{esc(caption)}</text>' if caption else ""
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="The loop: {esc(" then ".join(steps))}">'
+        f'<title>The loop: {esc(" then ".join(steps))}</title><style>{STYLE}</style>'
+        f'<rect width="{W}" height="{h}" fill="{BG}"/>{conn}{pills}{dot}{cap}</svg>'
+    )
+    (OUT / name).write_text(svg)
+    print("wrote", name, len(svg) // 1024, "KB")
+
+
 # ------------------------------------------------------------------ footer strip
 def footer_strip(name, c, seed):
     rnd = random.Random(seed)
@@ -349,9 +421,14 @@ def main():
     OUT.mkdir(exist_ok=True)
     user = os.environ.get("GITHUB_REPOSITORY_OWNER") or CFG.get("user", "LynkqUK")
     word_banner("about.svg", CFG["about"], 21)
-    now_banner("now.svg", CFG["now"], 8)
+    lines_banner("now.svg", CFG["now"], 8)
+    loop_strip("loop.svg", CFG["loop"])
     word_banner("stack.svg", CFG["stack"], 34)
     tools_strip("tools.svg", CFG["tools"])
+    projects_banner("projects.svg", CFG["projects"], user, 5)
+    lines_banner("rules.svg", CFG["rules"], 17)
+    lines_banner("goals.svg", CFG["goals"], 29)
+    lines_banner("beyond.svg", CFG["beyond"], 41)
     activity_banner("activity.svg", CFG["activity"], user, 13)
     word_banner("contact.svg", CFG["contact"], 55)
     footer_strip("footer.svg", CFG["footer"], 89)

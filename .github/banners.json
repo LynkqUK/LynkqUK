@@ -1,46 +1,157 @@
 {
   "user": "LynkqUK",
-
   "about": {
     "title": "About",
     "sub": "Learning to build software.",
     "pill": "python · c++",
     "word": "BUILD"
   },
-
   "now": {
     "title": "Now",
     "sub": "What I'm working on.",
     "pill": "in progress",
     "lines": [
-      ["learning", "c++ and python"],
-      ["building", "a first full project"],
-      ["reading", "other people's code"]
+      [
+        "learning",
+        "c++ and python"
+      ],
+      [
+        "building",
+        "a first full project"
+      ],
+      [
+        "reading",
+        "other people's code"
+      ],
+      [
+        "leveling up",
+        "one commit at a time"
+      ]
     ]
   },
-
   "stack": {
     "title": "Stack",
     "sub": "What I work with.",
     "pill": "git · linux · web",
     "word": "PYTHON"
   },
-
-  "tools": ["python", "c++", "html", "css", "javascript", "git", "linux"],
-
+  "tools": [
+    "python",
+    "c++",
+    "html",
+    "css",
+    "javascript",
+    "git",
+    "linux"
+  ],
   "activity": {
     "title": "Activity",
     "sub": "Last 37 weeks on GitHub."
   },
-
   "contact": {
     "title": "Contact",
     "sub": "Say hi on Discord.",
     "pill": "discord",
     "word": "HELLO"
   },
-
   "footer": {
     "text": "LynkqUK · 2026"
+  },
+  "loop": {
+    "steps": [
+      "learn",
+      "build",
+      "break it",
+      "fix it",
+      "ship"
+    ],
+    "caption": "and repeat."
+  },
+  "rules": {
+    "title": "Rules",
+    "sub": "How I work.",
+    "pill": "systems > motivation",
+    "lines": [
+      [
+        "systems",
+        "over motivation"
+      ],
+      [
+        "small loops",
+        "ship often, learn fast"
+      ],
+      [
+        "clean code",
+        "readable beats clever"
+      ],
+      [
+        "consistency",
+        "beats intensity"
+      ]
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "sub": "Things I've built.",
+    "empty": [
+      [
+        "soon",
+        "first project in the works"
+      ],
+      [
+        "idea",
+        "a few already on the list"
+      ]
+    ]
+  },
+  "goals": {
+    "title": "Goals",
+    "sub": "Where I'm heading.",
+    "pill": "2026",
+    "lines": [
+      [
+        "done",
+        "set up this profile"
+      ],
+      [
+        "next",
+        "ship a first full project"
+      ],
+      [
+        "next",
+        "get comfortable with c++"
+      ],
+      [
+        "later",
+        "a first open-source pull request"
+      ],
+      [
+        "later",
+        "build something people use"
+      ]
+    ]
+  },
+  "beyond": {
+    "title": "Beyond",
+    "sub": "Life outside the editor.",
+    "pill": "balance",
+    "lines": [
+      [
+        "lifting",
+        "3-4 days a week"
+      ],
+      [
+        "chess",
+        "chess.com and lichess"
+      ],
+      [
+        "math",
+        "problem solving, for fun"
+      ],
+      [
+        "languages",
+        "english, french, arabic"
+      ]
+    ]
   }
 }

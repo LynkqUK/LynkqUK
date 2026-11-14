@@ -17,11 +17,31 @@
 
 <br><br>
 
+<img src="art/loop.svg" width="100%" alt="The loop: learn, build, break it, fix it, ship, and repeat">
+
+<br><br>
+
 <img src="art/stack.svg" width="100%" alt="Stack: what I work with">
 
 <br><br>
 
 <img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
+
+<br><br>
+
+<img src="art/projects.svg" width="100%" alt="Projects: things I have built">
+
+<br><br>
+
+<img src="art/rules.svg" width="100%" alt="Rules: systems over motivation, small loops, clean code, consistency">
+
+<br><br>
+
+<img src="art/goals.svg" width="100%" alt="Goals: where I am heading">
+
+<br><br>
+
+<img src="art/beyond.svg" width="100%" alt="Beyond: lifting, chess, math, languages">
 
 <br><br>
 
