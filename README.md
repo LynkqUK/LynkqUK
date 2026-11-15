@@ -9,6 +9,10 @@
 
 <br><br>
 
+<img src="art/tagline.svg" width="100%" alt="I am learning python and c++, shipping a first full project, lifting heavy things">
+
+<br><br>
+
 <h3>I lift heavy things, move wooden pieces and argue with compilers.<br>Not always in that order.</h3>
 
 <p>Student. Part-time chess player, full-time overthinker.<br>
@@ -41,19 +45,7 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <br><br>
 
-<img src="art/skills.svg" width="100%" alt="Skills: python, c++, html and css, javascript, git">
-
-<br><br>
-
-<img src="art/stack.svg" width="100%" alt="Stack: what I work with">
-
-<br><br>
-
 <img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
-
-<br><br>
-
-<img src="art/day.svg" width="100%" alt="A day: wake, gym, study, code, chess, sleep. Repeat daily, bugs expected.">
 
 <br><br>
 
@@ -74,14 +66,6 @@ Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 <br><br>
 
 <img src="art/projects.svg" width="100%" alt="Projects: things I have built">
-
-<br><br>
-
-<img src="art/rules.svg" width="100%" alt="Rules: systems over motivation, small loops, clean code, consistency">
-
-<br><br>
-
-<img src="art/goals.svg" width="100%" alt="Goals: where I am heading">
 
 <br><br>
 
@@ -143,6 +127,12 @@ Fastest way to reach me is Discord or email, buttons below.</p>
 <br><br>
 
 <img src="art/footer.svg" width="100%" alt="LynkqUK 2026">
+
+<details><summary><sub>do not open</sub></summary>
+<br>
+<b>Told you.</b><br><sub>Now go write some code.</sub>
+<br><br>
+</details>
 
 <details><summary><sub>How this page works</sub></summary>
 <br>

@@ -604,6 +604,47 @@ def eq_banner(name, c):
     (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
 
 
+# ------------------------------------------------------------------ cycling typewriter tagline
+def cycle_banner(name, c):
+    phrases = c["phrases"]
+    prefix = c.get("prefix", "i'm ")
+    fs = 60
+    cw = fs * 0.6
+    h = 190
+    x0 = 72 + (len(prefix) + 2) * cw + 4
+    N = len(phrases)
+    slot = 6.0
+    D = N * slot
+    events, clips, texts = [], "", ""
+    for i, ph in enumerate(phrases):
+        n = len(ph)
+        t = i * slot + 0.3
+        ev = [(0.0, 0)]
+        for j in range(1, n + 1):
+            ev.append((t + j * 0.06, j))
+        t_hold = t + n * 0.06 + 1.6
+        for j in range(n - 1, -1, -1):
+            ev.append((t_hold + (n - j) * 0.03, j))
+        events += ev[1:]
+        ev.append((D, 0))
+        kts = ";".join(f"{min(e[0] / D, 1):.5f}" for e in ev)
+        vals = ";".join(f"{e[1] * cw:.1f}" for e in ev)
+        clips += (f'<clipPath id="y{i}"><rect x="{x0}" y="30" width="0" height="120"><animate attributeName="width" values="{vals}" keyTimes="{kts}" calcMode="discrete" dur="{D}s" repeatCount="indefinite"/></rect></clipPath>')
+        texts += f'<g clip-path="url(#y{i})"><text x="{x0}" y="{h / 2 + fs * 0.35:.1f}" {FIRA} font-size="{fs}" font-weight="500" fill="{TITLE}">{esc(ph)}</text></g>'
+    events.sort()
+    ev = [(0.0, 0)] + events + [(D, 0)]
+    kts = ";".join(f"{min(e[0] / D, 1):.5f}" for e in ev)
+    vals = ";".join(f"{x0 + e[1] * cw + 4:.1f}" for e in ev)
+    caret = (f'<rect class="bl" x="{x0 + 4}" y="{h / 2 - 34}" width="{cw * 0.55:.0f}" height="68" fill="{TITLE}">'
+             f'<animate attributeName="x" values="{vals}" keyTimes="{kts}" calcMode="discrete" dur="{D}s" repeatCount="indefinite"/></rect>')
+    pre = f'<text x="72" y="{h / 2 + fs * 0.35:.1f}" {FIRA} font-size="{fs}" font-weight="500" fill="{RAMP[3]}">&gt; {esc(prefix)}</text>'
+    pre = pre.replace(f'&gt; {esc(prefix)}', esc("> " + prefix)).replace("<text", "<text", 1)
+    line = f'<rect x="72" y="{h - 6}" width="{W - 144}" height="2" fill="{PILL_STROKE}"/>'
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="Rotating tagline: {esc("; ".join(phrases))}">'
+           f'<title>{esc(prefix)}{esc(phrases[0])}</title><style>{STYLE}</style><defs>{clips}</defs><rect width="{W}" height="{h}" fill="{BG}"/>{pre}{texts}{caret}{line}</svg>')
+    (OUT / name).write_text(svg); print("wrote", name, len(svg) // 1024, "KB")
+
+
 # ------------------------------------------------------------------ the loop (animated)
 def loop_strip(name, c):
     steps = c["steps"][:6]
@@ -659,7 +700,7 @@ def footer_strip(name, c, seed):
     h = 164
     cols = 59
     rows = 5
-    text = c["text"]
+    text = c["text"] + "  ·  built " + datetime.datetime.utcnow().strftime("%d %b %Y")
     tw = len(text) * (30 * 0.6 + 3)
     cx0 = (W - tw) / 2 - 80
     cx1 = (W + tw) / 2 + 60
@@ -700,6 +741,7 @@ def footer_strip(name, c, seed):
 def main():
     OUT.mkdir(exist_ok=True)
     user = os.environ.get("GITHUB_REPOSITORY_OWNER") or CFG.get("user", "LynkqUK")
+    cycle_banner("tagline.svg", CFG["tagline"])
     marquee_strip("marquee.svg", CFG["marquee"])
     word_banner("about.svg", CFG["about"], 21)
     lines_banner("now.svg", CFG["now"], 8)
@@ -709,19 +751,14 @@ def main():
     focus_banner("focus.svg", CFG["focus"])
     code_banner("code.svg", CFG["code"])
     loop_strip("loop.svg", CFG["loop"])
-    word_banner("stack.svg", CFG["stack"], 34)
     tools_strip("tools.svg", CFG["tools"])
     sheet_banner("sheet.svg", CFG["sheet"], 63)
-    sheet_banner("skills.svg", CFG["skills"], 71)
-    loop_strip("day.svg", CFG["day"])
     button_banner("btn-discord.svg", CFG["btn_discord"])
     button_banner("btn-email.svg", CFG["btn_email"])
     knight_tour("knight.svg", CFG["knight"])
     lines_banner("games.svg", CFG["games"], 77)
     word_banner("numbers.svg", CFG["numbers"], 99)
     projects_banner("projects.svg", CFG["projects"], user, 5)
-    lines_banner("rules.svg", CFG["rules"], 17)
-    lines_banner("goals.svg", CFG["goals"], 29)
     lines_banner("beyond.svg", CFG["beyond"], 41)
     activity_banner("activity.svg", CFG["activity"], user, 13)
     word_banner("contact.svg", CFG["contact"], 55)

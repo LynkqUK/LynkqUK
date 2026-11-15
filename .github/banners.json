@@ -155,7 +155,7 @@
     ]
   },
   "sheet": {
-    "title": "Stats",
+    "title": "Traits",
     "sub": "Character sheet.",
     "pill": "lvl: in progress",
     "stats": [
@@ -439,6 +439,17 @@
       "25 min on",
       "5 min off",
       "repeat"
+    ]
+  },
+  "tagline": {
+    "prefix": "i'm ",
+    "phrases": [
+      "learning python and c++",
+      "shipping a first full project",
+      "lifting heavy things",
+      "losing at chess at 2 a.m.",
+      "reading other people's code",
+      "debugging, still"
     ]
   }
 }
