@@ -1,145 +1,67 @@
-<!-- Everything below is generated. To change the words, edit .github/banners.json and commit: the banners rebuild themselves. -->
-
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.svg">
-  <img alt="LynkqUK" src="art/header-light.svg" width="100%">
-</picture>
+<img src="art/banner.svg" width="100%" alt="LynkqUK">
 
 <br><br>
 
-<img src="art/tagline.svg" width="100%" alt="I am learning python and c++, shipping a first full project, lifting heavy things">
-
-<br><br>
-
-<h3>I lift heavy things, move wooden pieces and argue with compilers.<br>Not always in that order.</h3>
-
-<p>Student. Part-time chess player, full-time overthinker.<br>
-I like problems that fight back: a bug that only shows up at 2 a.m., a chess endgame, a proof that looks wrong until it suddenly doesn't.<br>
-Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
+<p>
+  <b>Islam</b> — student & developer.<br>
+  Writing <b>C++</b>, <b>Python</b>, and clean web interfaces.<br>
+  <sub>Less tutorials. More shipped code.</sub>
+</p>
 
 <br>
 
-<img src="art/marquee.svg" width="100%" alt="Ship it, read the error, commit often, break it, fix it, repeat">
-
-<br><br>
-
-<img src="art/about.svg" width="100%" alt="About: learning to build software">
-
-<br><br>
-
-<img src="art/now.svg" width="100%" alt="Now: learning c++ and python, building a first full project, reading other people's code">
-
-<br><br>
-
-<img src="art/code.svg" width="100%" alt="me.py: a short Python class describing me">
-
-<br><br>
-
-<img src="art/loop.svg" width="100%" alt="The loop: learn, build, break it, fix it, ship, and repeat">
-
-<br><br>
-
-<img src="art/sheet.svg" width="100%" alt="Character sheet: logic 10, focus 8, discipline 9, strength 7, sleep 3">
-
-<br><br>
-
-<img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
-
-<br><br>
-
-<img src="art/lift.svg" width="100%" alt="Lift: an animated barbell doing five reps">
-
-<br><br>
-
-<img src="art/knight.svg" width="100%" alt="A knight visiting every square of a chessboard once">
-
-<br><br>
-
-<img src="art/games.svg" width="100%" alt="Games: chess, minecraft, valorant, rocket league">
-
-<br><br>
-
-<img src="art/sound.svg" width="100%" alt="Sound: an audio equalizer, headphones on, world off">
-
-<br><br>
-
-<img src="art/projects.svg" width="100%" alt="Projects: things I have built">
-
-<br><br>
-
-<img src="art/quests.svg" width="100%" alt="Quests in progress: first project 60 percent, c++ 35 percent">
-
-<br><br>
-
-<img src="art/beyond.svg" width="100%" alt="Beyond: lifting, chess, math, languages">
-
-<br><br>
-
-<h2>Hot takes</h2>
-
-<details><summary><b>Tabs or spaces?</b></summary><br>Whatever the formatter says. Arguing about it is a tax on your time.<br><br></details>
-<details><summary><b>Best programming language?</b></summary><br>Ask me again after the next project. It changes every time I learn something new.<br><br></details>
-<details><summary><b>Clever code or readable code?</b></summary><br>Readable. Future me is a stranger who hates present me.<br><br></details>
-<details><summary><b>Motivation or discipline?</b></summary><br>Neither. Systems. Motivation shows up late, discipline gets tired, a good routine just runs.<br><br></details>
-<details><summary><b>Sleep?</b></summary><br>A feature I keep meaning to enable.<br><br></details>
-
-<br>
-
-<img src="art/focus.svg" width="100%" alt="Focus: a 25 minute timer ring">
-
-<br><br>
-
-<img src="art/numbers.svg" width="100%" alt="Numbers: GitHub stats, auto-updated">
-
-<br><br>
-
-<img src="profile-summary-card-output/lynkquk/3-stats.svg" width="32%" alt="GitHub stats">
-<img src="profile-summary-card-output/lynkquk/4-productive-time.svg" width="32%" alt="Most productive time of day">
-<img src="profile-summary-card-output/lynkquk/1-repos-per-language.svg" width="32%" alt="Repositories per language">
-
-<br><br>
-
-<img src="art/activity.svg" width="100%" alt="Activity: my GitHub contributions over the last 37 weeks">
-
-<br><br>
-
-<img src="art/snake.svg" width="100%" alt="A snake eating my contribution graph">
-
-<br><br>
-
-<h2>Talk to me</h2>
-
-<p><b>Got a problem worth solving, a project that needs a second brain, or a chess game to lose?</b><br>
-Show me what you've tried first, then we'll get along fine.<br>
-Fastest way to reach me is Discord or email, buttons below.</p>
-
-<br><br>
-
-<a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" width="46%" alt="Discord"></a>
-<a href="mailto:lynkqbusiness.gg@gmail.com"><img src="art/btn-email.svg" width="46%" alt="Email: lynkqbusiness.gg@gmail.com"></a>
-
-<br><br>
-
-<a href="https://discord.com/users/1022867064618221599"><img src="art/contact.svg" width="100%" alt="Contact: say hi on Discord"></a>
-
-<br><br>
-
-<img src="art/footer.svg" width="100%" alt="LynkqUK 2026">
-
-<details><summary><sub>do not open</sub></summary>
-<br>
-<b>Told you.</b><br><sub>Now go write some code.</sub>
-<br><br>
-</details>
-
-<details><summary><sub>How this page works</sub></summary>
-<br>
-<sub>Every banner is an SVG generated by <code>.github/scripts/banners.py</code> from <code>.github/banners.json</code>.<br>
-A GitHub Action rebuilds them every 12 hours and on every push: contribution data, the snake, the stats cards and the project list all refresh by themselves.<br>
-No images are uploaded by hand, nothing is hosted elsewhere.</sub>
-<br><br>
-</details>
+<a href="https://discord.com/users/1022867064618221599"><kbd>&nbsp;&nbsp;Discord&nbsp;&nbsp;</kbd></a>
+&nbsp;&nbsp;
+<a href="mailto:lynkqbusiness.gg@gmail.com"><kbd>&nbsp;&nbsp;Email&nbsp;&nbsp;</kbd></a>
+&nbsp;&nbsp;
+<a href="https://github.com/LynkqUK?tab=repositories"><kbd>&nbsp;&nbsp;Repositories&nbsp;&nbsp;</kbd></a>
 
 </div>
+
+<br>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <br>
+      <code>// NOW</code>
+      <br><br>
+      <ul>
+        <li>Building a full project from scratch — no tutorial crutches</li>
+        <li>Going deeper into <b>C++</b> and <b>Python</b></li>
+        <li>Reading production code and tightening fundamentals</li>
+        <li>Off screen: heavy lifts, chess endgames, math</li>
+      </ul>
+      <br>
+    </td>
+    <td width="50%" valign="top">
+      <br>
+      <code>// STACK</code>
+      <br><br>
+      <kbd>C++</kbd>&nbsp;
+      <kbd>Python</kbd>&nbsp;
+      <kbd>JavaScript</kbd>&nbsp;
+      <kbd>HTML</kbd>&nbsp;
+      <kbd>CSS</kbd>
+      <br><br>
+      <kbd>React</kbd>&nbsp;
+      <kbd>Tailwind</kbd>&nbsp;
+      <kbd>Node.js</kbd>&nbsp;
+      <kbd>Git</kbd>&nbsp;
+      <kbd>Linux</kbd>
+      <br><br>
+      <sub>Prefer readable code, clean systems, and things that actually run.</sub>
+      <br><br>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+```text
+01  STATUS      active · shipping
+02  FOCUS       systems · web · tooling
+03  APPROACH    build it, break it, read the error, fix it
+04  RULE        finish what gets started
