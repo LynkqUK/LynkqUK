@@ -1,263 +1,145 @@
+<!-- Everything below is generated. To change the words, edit .github/banners.json and commit: the banners rebuild themselves. -->
+
 <div align="center">
 
-<!-- ===================================================================== -->
-<!--                              HERO BANNER                              -->
-<!-- ===================================================================== -->
-
-<img src="art/hero.svg" width="100%" alt="LynkqUK">
-
-<br>
-
-<img src="art/ticker.svg" width="100%" alt="Ship code, read the error, commit often, break it, fix it">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.svg">
+  <img alt="LynkqUK" src="art/header-light.svg" width="100%">
+</picture>
 
 <br><br>
 
-<!-- ===================================================================== -->
-<!--                           QUICK NAVIGATION                            -->
-<!-- ===================================================================== -->
-
-<a href="#-manifesto"><kbd>&nbsp;&nbsp;01 · ABOUT&nbsp;&nbsp;</kbd></a>
-&nbsp;
-<a href="#-stack--architecture"><kbd>&nbsp;&nbsp;02 · STACK&nbsp;&nbsp;</kbd></a>
-&nbsp;
-<a href="#-selected-work"><kbd>&nbsp;&nbsp;03 · WORK&nbsp;&nbsp;</kbd></a>
-&nbsp;
-<a href="#-telemetry"><kbd>&nbsp;&nbsp;04 · TELEMETRY&nbsp;&nbsp;</kbd></a>
-&nbsp;
-<a href="#-contact"><kbd>&nbsp;&nbsp;05 · CONTACT&nbsp;&nbsp;</kbd></a>
+<img src="art/tagline.svg" width="100%" alt="I am learning python and c++, shipping a first full project, lifting heavy things">
 
 <br><br>
 
-<!-- ===================================================================== -->
-<!--                           ANIMATED TERMINAL                           -->
-<!-- ===================================================================== -->
+<h3>I lift heavy things, move wooden pieces and argue with compilers.<br>Not always in that order.</h3>
 
-<img src="art/terminal.svg" width="100%" alt="LynkqUK Terminal Readout">
-
-</div>
+<p>Student. Part-time chess player, full-time overthinker.<br>
+I like problems that fight back: a bug that only shows up at 2 a.m., a chess endgame, a proof that looks wrong until it suddenly doesn't.<br>
+Right now I'm turning "I watched a tutorial" into "I shipped it".</p>
 
 <br>
 
-<!-- ===================================================================== -->
-<!--                             01 · MANIFESTO                            -->
-<!-- ===================================================================== -->
+<img src="art/marquee.svg" width="100%" alt="Ship it, read the error, commit often, break it, fix it, repeat">
 
-<h3 id="-manifesto"><code>// 01 &nbsp;MANIFESTO</code></h3>
+<br><br>
 
-<table>
-  <tr>
-    <td width="54%" valign="top">
-      <br>
-      <b>I lift heavy things, move wooden pieces, and argue with compilers.</b>
-      <br><br>
-      Student & developer focused on writing clean <b>C++</b>, <b>Python</b>, and sharp web interfaces.
-      Right now the entire objective is simple: turn <i>"I learned it"</i> into <i>"I shipped it."</i>
-      <br><br>
-      I gravitate toward problems that push back — a bug that refuses to reproduce, a tight chess endgame,
-      or an architecture that feels impossible until the last piece locks in.
-      <br><br>
-      <sub><code>LOCATION // EARTH &nbsp;·&nbsp; MODE // DEEP WORK &nbsp;·&nbsp; STATUS // SHIPPING</code></sub>
-      <br><br>
-    </td>
-    <td width="46%" valign="top">
-      <br>
-      <code>CURRENT DIRECTIVES</code>
-      <br><br>
-      <ul>
-        <li><b>01.</b> &nbsp;Shipping a complete project from scratch — no tutorial crutches</li>
-        <li><b>02.</b> &nbsp;Going deeper into <b>C++</b> memory, STL, and performance</li>
-        <li><b>03.</b> &nbsp;Building automation, CLI tooling, and backends in <b>Python</b></li>
-        <li><b>04.</b> &nbsp;Reading production codebases to sharpen system design</li>
-        <li><b>05.</b> &nbsp;Keeping every UI stark, fast, and human-designed</li>
-      </ul>
-      <br>
-    </td>
-  </tr>
-</table>
+<img src="art/about.svg" width="100%" alt="About: learning to build software">
 
-<br>
+<br><br>
 
-<div align="center">
+<img src="art/now.svg" width="100%" alt="Now: learning c++ and python, building a first full project, reading other people's code">
 
-<!-- ===================================================================== -->
-<!--                    ANIMATED QUESTS & FOCUS EQUALIZER                  -->
-<!-- ===================================================================== -->
+<br><br>
 
-<img src="art/telemetry.svg" width="100%" alt="Active Quests and Deep Work Focus">
+<img src="art/code.svg" width="100%" alt="me.py: a short Python class describing me">
 
-</div>
+<br><br>
 
-<br>
+<img src="art/loop.svg" width="100%" alt="The loop: learn, build, break it, fix it, ship, and repeat">
 
-<!-- ===================================================================== -->
-<!--                         02 · STACK & ARSENAL                          -->
-<!-- ===================================================================== -->
+<br><br>
 
-<h3 id="-stack--architecture"><code>// 02 &nbsp;STACK & ARCHITECTURE</code></h3>
+<img src="art/sheet.svg" width="100%" alt="Character sheet: logic 10, focus 8, discipline 9, strength 7, sleep 3">
 
-<table>
-  <tr>
-    <td width="25%" valign="top">
-      <br>
-      <code>CORE LANGUAGES</code>
-      <br><br>
-      <img src="https://img.shields.io/badge/C++-161B22?style=for-the-badge&logo=cplusplus&logoColor=FFFFFF" alt="C++"><br>
-      <img src="https://img.shields.io/badge/Python-161B22?style=for-the-badge&logo=python&logoColor=FFFFFF" alt="Python"><br>
-      <img src="https://img.shields.io/badge/JavaScript-161B22?style=for-the-badge&logo=javascript&logoColor=FFFFFF" alt="JavaScript">
-      <br><br>
-    </td>
-    <td width="25%" valign="top">
-      <br>
-      <code>FRONTEND</code>
-      <br><br>
-      <img src="https://img.shields.io/badge/React-161B22?style=for-the-badge&logo=react&logoColor=FFFFFF" alt="React"><br>
-      <img src="https://img.shields.io/badge/Tailwind-161B22?style=for-the-badge&logo=tailwindcss&logoColor=FFFFFF" alt="Tailwind CSS"><br>
-      <img src="https://img.shields.io/badge/HTML5-161B22?style=for-the-badge&logo=html5&logoColor=FFFFFF" alt="HTML5"><br>
-      <img src="https://img.shields.io/badge/CSS3-161B22?style=for-the-badge&logo=css3&logoColor=FFFFFF" alt="CSS3">
-      <br><br>
-    </td>
-    <td width="25%" valign="top">
-      <br>
-      <code>BACKEND & RUNTIME</code>
-      <br><br>
-      <img src="https://img.shields.io/badge/Node.js-161B22?style=for-the-badge&logo=nodedotjs&logoColor=FFFFFF" alt="Node.js"><br>
-      <img src="https://img.shields.io/badge/Express-161B22?style=for-the-badge&logo=express&logoColor=FFFFFF" alt="Express"><br>
-      <img src="https://img.shields.io/badge/Vercel-161B22?style=for-the-badge&logo=vercel&logoColor=FFFFFF" alt="Vercel">
-      <br><br>
-    </td>
-    <td width="25%" valign="top">
-      <br>
-      <code>ENVIRONMENT</code>
-      <br><br>
-      <img src="https://img.shields.io/badge/Linux-161B22?style=for-the-badge&logo=linux&logoColor=FFFFFF" alt="Linux"><br>
-      <img src="https://img.shields.io/badge/Git-161B22?style=for-the-badge&logo=git&logoColor=FFFFFF" alt="Git"><br>
-      <img src="https://img.shields.io/badge/GitHub_Actions-161B22?style=for-the-badge&logo=githubactions&logoColor=FFFFFF" alt="GitHub Actions"><br>
-      <img src="https://img.shields.io/badge/VS_Code-161B22?style=for-the-badge&logo=visualstudiocode&logoColor=FFFFFF" alt="VS Code">
-      <br><br>
-    </td>
-  </tr>
-</table>
+<br><br>
+
+<img src="art/tools.svg" width="100%" alt="Tools: python, c++, html, css, javascript, git, linux">
+
+<br><br>
+
+<img src="art/lift.svg" width="100%" alt="Lift: an animated barbell doing five reps">
+
+<br><br>
+
+<img src="art/knight.svg" width="100%" alt="A knight visiting every square of a chessboard once">
+
+<br><br>
+
+<img src="art/games.svg" width="100%" alt="Games: chess, minecraft, valorant, rocket league">
+
+<br><br>
+
+<img src="art/sound.svg" width="100%" alt="Sound: an audio equalizer, headphones on, world off">
+
+<br><br>
+
+<img src="art/projects.svg" width="100%" alt="Projects: things I have built">
+
+<br><br>
+
+<img src="art/quests.svg" width="100%" alt="Quests in progress: first project 60 percent, c++ 35 percent">
+
+<br><br>
+
+<img src="art/beyond.svg" width="100%" alt="Beyond: lifting, chess, math, languages">
+
+<br><br>
+
+<h2>Hot takes</h2>
+
+<details><summary><b>Tabs or spaces?</b></summary><br>Whatever the formatter says. Arguing about it is a tax on your time.<br><br></details>
+<details><summary><b>Best programming language?</b></summary><br>Ask me again after the next project. It changes every time I learn something new.<br><br></details>
+<details><summary><b>Clever code or readable code?</b></summary><br>Readable. Future me is a stranger who hates present me.<br><br></details>
+<details><summary><b>Motivation or discipline?</b></summary><br>Neither. Systems. Motivation shows up late, discipline gets tired, a good routine just runs.<br><br></details>
+<details><summary><b>Sleep?</b></summary><br>A feature I keep meaning to enable.<br><br></details>
 
 <br>
 
-<!-- ===================================================================== -->
-<!--                           03 · SELECTED WORK                          -->
-<!-- ===================================================================== -->
+<img src="art/focus.svg" width="100%" alt="Focus: a 25 minute timer ring">
 
-<h3 id="-selected-work"><code>// 03 &nbsp;SELECTED WORK</code></h3>
+<br><br>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <br>
-      <code>01 &nbsp;·&nbsp; ● ACTIVE</code>
-      <h4><a href="https://github.com/LynkqUK">Flagship Build — First Full Project</a></h4>
-      <p>End-to-end software built from zero without following a walkthrough. Designed to break, debug, refactor, and actually ship.</p>
-      <kbd>C++</kbd>&nbsp;<kbd>Python</kbd>&nbsp;<kbd>Systems</kbd>
-      <br><br>
-    </td>
-    <td width="50%" valign="top">
-      <br>
-      <code>02 &nbsp;·&nbsp; ■ SHIPPED</code>
-      <h4><a href="https://github.com/LynkqUK">Client Web Architecture</a></h4>
-      <p>Fast, responsive landing pages and custom web interfaces engineered for real businesses with clean typography and zero template bloat.</p>
-      <kbd>React</kbd>&nbsp;<kbd>Tailwind</kbd>&nbsp;<kbd>Vercel</kbd>
-      <br><br>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <br>
-      <code>03 &nbsp;·&nbsp; ■ SHIPPED</code>
-      <h4><a href="https://github.com/LynkqUK">Automation & Custom Bots</a></h4>
-      <p>Utility scripts, Discord automation, and performance tooling built to eliminate repetitive manual workflows.</p>
-      <kbd>Python</kbd>&nbsp;<kbd>Node.js</kbd>&nbsp;<kbd>APIs</kbd>
-      <br><br>
-    </td>
-    <td width="50%" valign="top">
-      <br>
-      <code>04 &nbsp;·&nbsp; ○ IN PROGRESS</code>
-      <h4><a href="https://github.com/LynkqUK">LynkqUK Profile Engine</a></h4>
-      <p>Zero-dependency Python SVG generator powering this entire repository — animated monochrome graphics compiled automatically.</p>
-      <kbd>Python</kbd>&nbsp;<kbd>SVG</kbd>&nbsp;<kbd>Actions</kbd>
-      <br><br>
-    </td>
-  </tr>
-</table>
+<img src="art/numbers.svg" width="100%" alt="Numbers: GitHub stats, auto-updated">
 
+<br><br>
+
+<img src="profile-summary-card-output/lynkquk/3-stats.svg" width="32%" alt="GitHub stats">
+<img src="profile-summary-card-output/lynkquk/4-productive-time.svg" width="32%" alt="Most productive time of day">
+<img src="profile-summary-card-output/lynkquk/1-repos-per-language.svg" width="32%" alt="Repositories per language">
+
+<br><br>
+
+<img src="art/activity.svg" width="100%" alt="Activity: my GitHub contributions over the last 37 weeks">
+
+<br><br>
+
+<img src="art/snake.svg" width="100%" alt="A snake eating my contribution graph">
+
+<br><br>
+
+<h2>Talk to me</h2>
+
+<p><b>Got a problem worth solving, a project that needs a second brain, or a chess game to lose?</b><br>
+Show me what you've tried first, then we'll get along fine.<br>
+Fastest way to reach me is Discord or email, buttons below.</p>
+
+<br><br>
+
+<a href="https://discord.com/users/1022867064618221599"><img src="art/btn-discord.svg" width="46%" alt="Discord"></a>
+<a href="mailto:lynkqbusiness.gg@gmail.com"><img src="art/btn-email.svg" width="46%" alt="Email: lynkqbusiness.gg@gmail.com"></a>
+
+<br><br>
+
+<a href="https://discord.com/users/1022867064618221599"><img src="art/contact.svg" width="100%" alt="Contact: say hi on Discord"></a>
+
+<br><br>
+
+<img src="art/footer.svg" width="100%" alt="LynkqUK 2026">
+
+<details><summary><sub>do not open</sub></summary>
 <br>
-
-<div align="center">
-
-<!-- ===================================================================== -->
-<!--                       ANIMATED CHESS & MINDSET                        -->
-<!-- ===================================================================== -->
-
-<img src="art/chess.svg" width="100%" alt="Knight Tour and Systems Mindset">
-
-</div>
-
-<br>
-
-<!-- ===================================================================== -->
-<!--                        INTERACTIVE DOSSIERS                           -->
-<!-- ===================================================================== -->
-
-<h3><code>// 04 &nbsp;FIELD NOTES</code></h3>
-
-<details>
-  <summary><b>▸ &nbsp;Engineering Principles</b> — how I write and review code</summary>
-  <br>
-  <table>
-    <tr>
-      <td width="30%"><code>READABILITY</code></td>
-      <td>Clever one-liners age badly. Write code that future-you can debug half-asleep in thirty seconds.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>FORMATTING</code></td>
-      <td>Tabs vs. spaces is a tax on your time. Run the formatter and get back to real problems.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>EXECUTION</code></td>
-      <td>Motivation shows up late and discipline runs out. Build systems that run automatically every day.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>TOOLING</code></td>
-      <td>The best programming language is whichever one solves the current problem cleanly. Stay sharp across paradigms.</td>
-    </tr>
-  </table>
-  <br>
+<b>Told you.</b><br><sub>Now go write some code.</sub>
+<br><br>
 </details>
 
-<details>
-  <summary><b>▸ &nbsp;Off-Screen</b> — training, chess, math & games</summary>
-  <br>
-  <table>
-    <tr>
-      <td width="30%"><code>TRAINING</code></td>
-      <td>Consistent heavy lifting on an Upper / Lower split. Progressive overload applies to code the exact same way.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>CHESS</code></td>
-      <td>Endgame calculation, sharp gambits, and tactical motifs. Quiet moves beat flashy blunders.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>GAMES</code></td>
-      <td>Chess · Rocket League · Minecraft · Competitive FPS when the IDE closes.</td>
-    </tr>
-    <tr>
-      <td width="30%"><code>SOUND</code></td>
-      <td>Headphones on, world muted. Late-night atmospheric tracks while building.</td>
-    </tr>
-  </table>
-  <br>
+<details><summary><sub>How this page works</sub></summary>
+<br>
+<sub>Every banner is an SVG generated by <code>.github/scripts/banners.py</code> from <code>.github/banners.json</code>.<br>
+A GitHub Action rebuilds them every 12 hours and on every push: contribution data, the snake, the stats cards and the project list all refresh by themselves.<br>
+No images are uploaded by hand, nothing is hosted elsewhere.</sub>
+<br><br>
 </details>
 
-<details>
-  <summary><b>▸ &nbsp;Changelog</b> — profile & dev log</summary>
-  <br>
-
-```text
-v3.0  [2026]  Monochrome noir overhaul · custom animated SVG engine · zero clutter
-v2.0  [2026]  Switched focus to C++ & Python fundamentals · full-stack web builds
-v1.0  [2025]  First shipped sites, automation bots, and GitHub profile launch
+</div>
